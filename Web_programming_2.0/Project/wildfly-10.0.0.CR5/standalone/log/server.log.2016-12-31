@@ -1,0 +1,995 @@
+2016-12-31 14:49:25,035 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.0.Final
+2016-12-31 14:49:26,717 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-12-31 14:49:26,789 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 10.0.0.CR5 (WildFly Core 2.0.5.Final) starting
+2016-12-31 14:49:26,790 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_73\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_73\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_73
+	java.io.tmpdir = C:\Users\moi\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_73/bin/server;C:/Program Files/Java/jre1.8.0_73/bin;C:/Program Files/Java/jre1.8.0_73/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\bin;C:\Users\moi\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;C:\WINDOWS\System32;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_73-b02
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_73
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.73-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5
+	jboss.host.name = colin
+	jboss.modules.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = colin
+	jboss.qualified.host.name = colin
+	jboss.server.base.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone
+	jboss.server.config.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\configuration
+	jboss.server.data.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\data
+	jboss.server.deploy.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\data\content
+	jboss.server.log.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\log
+	jboss.server.name = colin
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/configuration/logging.properties
+	module.path = C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/modules
+	org.jboss.boot.log.file = C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 10.x
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_73\lib\resources.jar;C:\Program Files\Java\jre1.8.0_73\lib\rt.jar;C:\Program Files\Java\jre1.8.0_73\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_73\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_73\lib\jce.jar;C:\Program Files\Java\jre1.8.0_73\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_73\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_73\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_73\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\bin
+	user.home = C:\Users\moi
+	user.language = fr
+	user.name = moi
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2016-12-31 14:49:26,807 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.x -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5 -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=Cp1252 
+2016-12-31 14:49:35,573 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found Project_Timeline.war in deployment directory. To trigger deployment create a file called Project_Timeline.war.dodeploy
+2016-12-31 14:49:35,623 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-12-31 14:49:35,712 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.3.4.Final
+2016-12-31 14:49:35,740 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.3.4.Final
+2016-12-31 14:49:35,839 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-12-31 14:49:35,844 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2016-12-31 14:49:35,847 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2016-12-31 14:49:35,854 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2016-12-31 14:49:35,855 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2016-12-31 14:49:35,858 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-12-31 14:49:35,866 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=4.9.4.Final
+2016-12-31 14:49:35,928 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-12-31 14:49:36,119 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.1.Final)
+2016-12-31 14:49:36,694 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 1.3.11.Final starting
+2016-12-31 14:49:36,694 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0003: Undertow 1.3.11.Final starting
+2016-12-31 14:49:38,726 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path 'C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-12-31 14:49:39,291 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2016-12-31 14:49:39,336 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2016-12-31 14:49:39,337 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-12-31 14:49:40,018 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 4.0.17.Final-wildfly-1
+2016-12-31 14:49:40,104 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2016-12-31 14:49:40,210 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-12-31 14:49:40,220 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-12-31 14:49:40,545 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2016-12-31 14:49:40,881 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2016-12-31 14:49:40,881 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2016-12-31 14:49:43,231 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "Project_Timeline.war" (runtime-name: "Project_Timeline.war")
+2016-12-31 14:49:43,400 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\deployments
+2016-12-31 14:49:44,949 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-12-31 14:49:45,293 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: WFLYSRV0083: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:269)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:163)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:235)
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:192)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:150)
+	... 6 more
+
+2016-12-31 14:49:46,288 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2016-12-31 14:49:46,288 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2016-12-31 14:49:46,288 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2016-12-31 14:49:47,829 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.1.2.Final (Apache CXF 3.1.4) 
+2016-12-31 14:49:53,069 INFO  [io.undertow.websockets.jsr] (ServerService Thread Pool -- 62) UT026003: Adding annotated server endpoint class Project_Timeline.WebSocket for path /web
+2016-12-31 14:49:53,991 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0021: Registered web context: /Project_Timeline
+2016-12-31 14:49:54,000 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: WFLYSRV0083: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2016-12-31 14:49:54,542 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 34) WFLYSRV0010: Deployed "Project_Timeline.war" (runtime-name : "Project_Timeline.war")
+2016-12-31 14:49:54,543 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: WFLYSRV0083: Failed to start the http-interface service
+
+2016-12-31 14:49:54,872 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0063: Http management interface is not enabled
+2016-12-31 14:49:54,872 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
+2016-12-31 14:49:54,872 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 10.0.0.CR5 (WildFly Core 2.0.5.Final) started (with errors) in 30459ms - Started 330 of 641 services (2 services failed or missing dependencies, 397 services are lazy, passive or on-demand)
+2016-12-31 14:51:15,506 INFO  [Project_Timeline.WebSocket] (default task-13) Open session:Tf8XU2aDjPM_HgzPiluAzcXcoaCoQGov9qBvPhFs
+2016-12-31 14:51:32,919 INFO  [Project_Timeline.WebSocket] (default task-26) Open session:R0LfBnnOIUD3MGBy15fPf7ZcuRm7VWPcQ7LUWdsF
+2016-12-31 14:51:39,632 INFO  [Project_Timeline.WebSocket] (default task-29) Closing:R0LfBnnOIUD3MGBy15fPf7ZcuRm7VWPcQ7LUWdsF
+2016-12-31 14:52:10,362 INFO  [Project_Timeline.WebSocket] (default task-40) Open session:K0WADHaP_mXpzXnRADkYHis8-C_8mjoh0_dD4Ipl
+2016-12-31 14:52:12,719 INFO  [Project_Timeline.WebSocket] (default task-42) Open session:tUJwFKSEEO2xR-yrFfC0T0Bnoj6TeNyM9t7Md85A
+2016-12-31 14:52:19,709 INFO  [Project_Timeline.WebSocket] (default task-43) Received : {"type":"message","data":"Hello","username":"Jean","channel":""}, session:K0WADHaP_mXpzXnRADkYHis8-C_8mjoh0_dD4Ipl
+2016-12-31 14:52:24,131 INFO  [Project_Timeline.WebSocket] (default task-44) Received : {"type":"message","data":"Heelo2","username":"Jean2","channel":""}, session:tUJwFKSEEO2xR-yrFfC0T0Bnoj6TeNyM9t7Md85A
+2016-12-31 14:52:30,645 INFO  [Project_Timeline.WebSocket] (default task-46) Open session:vpn8fHscEwTZI8qdWN0UIKz_l8gr-kLvrJ5uXmz2
+2016-12-31 14:52:35,628 INFO  [Project_Timeline.WebSocket] (default task-47) Closing:vpn8fHscEwTZI8qdWN0UIKz_l8gr-kLvrJ5uXmz2
+2016-12-31 14:53:38,467 INFO  [Project_Timeline.WebSocket] (default task-50) Received : {"type":"message","data":"dd","username":"Jean","channel":""}, session:K0WADHaP_mXpzXnRADkYHis8-C_8mjoh0_dD4Ipl
+2016-12-31 14:53:40,803 INFO  [Project_Timeline.WebSocket] (default task-51) Received : {"type":"message","data":"dddd","username":"Jean2","channel":""}, session:tUJwFKSEEO2xR-yrFfC0T0Bnoj6TeNyM9t7Md85A
+2016-12-31 14:53:46,328 INFO  [Project_Timeline.WebSocket] (default task-53) Open session:t3OOoQ0Ai3AUBDl4bPObK9GFyj5qbU8puY4sVyNL
+2016-12-31 14:53:53,956 INFO  [Project_Timeline.WebSocket] (default task-54) Closing:t3OOoQ0Ai3AUBDl4bPObK9GFyj5qbU8puY4sVyNL
+2016-12-31 14:53:56,308 INFO  [Project_Timeline.WebSocket] (default task-57) Closing:K0WADHaP_mXpzXnRADkYHis8-C_8mjoh0_dD4Ipl
+2016-12-31 14:53:57,387 INFO  [Project_Timeline.WebSocket] (default task-60) Closing:tUJwFKSEEO2xR-yrFfC0T0Bnoj6TeNyM9t7Md85A
+2016-12-31 14:54:56,390 INFO  [Project_Timeline.WebSocket] (default task-64) Open session:hc5GXbtqOty53LYmO9cKpeX-gTD39ETcgKIoI07w
+2016-12-31 14:54:59,721 INFO  [Project_Timeline.WebSocket] (default task-66) Open session:6Ukw1iRuOfsQ_UJjEdD4v4Ik43M32Z8dtCwfSaxH
+2016-12-31 14:56:12,490 INFO  [Project_Timeline.WebSocket] (default task-67) Received : {"type":"message","data":"Hello","username":"Jean3","channel":""}, session:hc5GXbtqOty53LYmO9cKpeX-gTD39ETcgKIoI07w
+2016-12-31 15:04:04,749 INFO  [Project_Timeline.WebSocket] (default task-68) Closing:6Ukw1iRuOfsQ_UJjEdD4v4Ik43M32Z8dtCwfSaxH
+2016-12-31 15:04:04,776 INFO  [Project_Timeline.WebSocket] (default task-72) Open session:I7G1MI4kS3xG2Muit73nGDAl7GSJWviMjrQfAZpz
+2016-12-31 15:04:14,517 INFO  [Project_Timeline.WebSocket] (default task-73) Received : {"type":"message","data":"grgr","username":"Jean3","channel":""}, session:hc5GXbtqOty53LYmO9cKpeX-gTD39ETcgKIoI07w
+2016-12-31 15:25:10,970 INFO  [Project_Timeline.WebSocket] (default task-79) Open session:VQfp-uiLENLr-Pk-9CUJVno_bBVIEzpZRNy3BT-A
+2016-12-31 15:25:31,759 INFO  [Project_Timeline.WebSocket] (default task-82) Open session:_qCPqeetyIP_6X_P5JEULdYOhXYLoWq8Q5KpGmrl
+2016-12-31 15:25:35,811 INFO  [Project_Timeline.WebSocket] (default task-83) Closing:hc5GXbtqOty53LYmO9cKpeX-gTD39ETcgKIoI07w
+2016-12-31 15:25:35,811 INFO  [Project_Timeline.WebSocket] (default task-84) Closing:I7G1MI4kS3xG2Muit73nGDAl7GSJWviMjrQfAZpz
+2016-12-31 15:25:49,270 INFO  [Project_Timeline.WebSocket] (default task-101) Open session:he7kxfUR7wjqB1XJPmUZ53zQsv_KOiPLgWmm0vFP
+2016-12-31 15:25:50,326 INFO  [Project_Timeline.WebSocket] (default task-103) Open session:HIMZKDCMABDi6qLlEwme6nzNARA3SfG1EinznX6Y
+2016-12-31 15:25:56,616 INFO  [Project_Timeline.WebSocket] (default task-104) Received : {"type":"message","data":"Hello","username":"Jean40","channel":""}, session:he7kxfUR7wjqB1XJPmUZ53zQsv_KOiPLgWmm0vFP
+2016-12-31 15:26:04,881 INFO  [Project_Timeline.WebSocket] (default task-105) Received : {"type":"message","data":"Hellloooo","username":"Jean42","channel":""}, session:HIMZKDCMABDi6qLlEwme6nzNARA3SfG1EinznX6Y
+2016-12-31 15:27:57,408 INFO  [Project_Timeline.WebSocket] (default task-106) Closing:he7kxfUR7wjqB1XJPmUZ53zQsv_KOiPLgWmm0vFP
+2016-12-31 15:27:57,408 INFO  [Project_Timeline.WebSocket] (default task-107) Closing:HIMZKDCMABDi6qLlEwme6nzNARA3SfG1EinznX6Y
+2016-12-31 15:28:16,643 INFO  [Project_Timeline.WebSocket] (default task-124) Open session:b_wG7Zbu_BteObLg_0yAp1XZvzm5XYWN8BGaysOg
+2016-12-31 15:28:25,339 INFO  [Project_Timeline.WebSocket] (default task-126) Open session:GCkmoNMtdTx4zAdKzMlX3K2UCZn0l4zY188T510D
+2016-12-31 15:28:33,446 INFO  [Project_Timeline.WebSocket] (default task-127) Received : {"type":"message","data":"Hello","username":"Jean42","channel":""}, session:b_wG7Zbu_BteObLg_0yAp1XZvzm5XYWN8BGaysOg
+2016-12-31 15:28:37,966 INFO  [Project_Timeline.WebSocket] (default task-128) Received : {"type":"message","data":"Hello","username":"Jean4","channel":""}, session:GCkmoNMtdTx4zAdKzMlX3K2UCZn0l4zY188T510D
+2016-12-31 15:28:42,614 INFO  [Project_Timeline.WebSocket] (default task-1) Received : {"type":"message","data":"fefefe","username":"Jean4","channel":""}, session:GCkmoNMtdTx4zAdKzMlX3K2UCZn0l4zY188T510D
+2016-12-31 15:28:46,214 INFO  [Project_Timeline.WebSocket] (default task-2) Received : {"type":"message","data":"fefefefe","username":"Jean42","channel":""}, session:b_wG7Zbu_BteObLg_0yAp1XZvzm5XYWN8BGaysOg
+2016-12-31 15:29:19,382 INFO  [Project_Timeline.WebSocket] (default task-3) Closing:b_wG7Zbu_BteObLg_0yAp1XZvzm5XYWN8BGaysOg
+2016-12-31 15:29:20,473 INFO  [Project_Timeline.WebSocket] (default task-6) Closing:GCkmoNMtdTx4zAdKzMlX3K2UCZn0l4zY188T510D
+2016-12-31 15:36:00,096 INFO  [Project_Timeline.WebSocket] (default task-12) Open session:v9hdJ4Q7pQ5JcCx0DM2zvcMFz55ZNwh_K-YfkE4f
+2016-12-31 15:36:05,193 INFO  [Project_Timeline.WebSocket] (default task-11) Open session:HyANjM2-fwHvHwEm6UgLgvrLh96JmxgtSvfqATWf
+2016-12-31 15:36:07,722 INFO  [Project_Timeline.WebSocket] (default task-14) Received : {"type":"message","data":"grgr","username":"Jean5","channel":"4"}, session:HyANjM2-fwHvHwEm6UgLgvrLh96JmxgtSvfqATWf
+2016-12-31 15:36:09,961 INFO  [Project_Timeline.WebSocket] (default task-15) Received : {"type":"message","data":"grgrgr","username":"Jean4","channel":"4"}, session:v9hdJ4Q7pQ5JcCx0DM2zvcMFz55ZNwh_K-YfkE4f
+2016-12-31 15:39:25,825 INFO  [Project_Timeline.WebSocket] (default task-18) Open session:CndpBvA6I503oGyDJ3xl_cqm-BnwBZffomJQ5HF2
+2016-12-31 15:39:29,327 INFO  [Project_Timeline.WebSocket] (default task-19) Closing:v9hdJ4Q7pQ5JcCx0DM2zvcMFz55ZNwh_K-YfkE4f
+2016-12-31 15:39:29,327 INFO  [Project_Timeline.WebSocket] (default task-20) Closing:HyANjM2-fwHvHwEm6UgLgvrLh96JmxgtSvfqATWf
+2016-12-31 15:39:42,581 INFO  [Project_Timeline.WebSocket] (default task-36) Open session:IjjS9vS_nrzPsHkPsWhuiYzvKwGCwySjttWhlW-T
+2016-12-31 15:39:59,429 INFO  [Project_Timeline.WebSocket] (default task-38) Open session:k2IdGH2Xq8qHg2UszV7NCIhrDx-Y3S_mS_vS1yGP
+2016-12-31 15:40:05,807 INFO  [Project_Timeline.WebSocket] (default task-40) Received : {"type":"message","data":"Hello","username":"Jean42","channel":""}, session:k2IdGH2Xq8qHg2UszV7NCIhrDx-Y3S_mS_vS1yGP
+2016-12-31 15:40:30,078 INFO  [Project_Timeline.WebSocket] (default task-42) Open session:hrQ78Pbkv4L1HTARLOWR8lL3I0YiRKi8V6Q18jgn
+2016-12-31 15:40:34,608 INFO  [Project_Timeline.WebSocket] (default task-44) Closing:k2IdGH2Xq8qHg2UszV7NCIhrDx-Y3S_mS_vS1yGP
+2016-12-31 15:40:35,360 INFO  [Project_Timeline.WebSocket] (default task-48) Closing:IjjS9vS_nrzPsHkPsWhuiYzvKwGCwySjttWhlW-T
+2016-12-31 15:40:56,843 INFO  [Project_Timeline.WebSocket] (default task-60) Open session:D7KrlDImrQX5VlS9hH8mJGMxhmwOptR9qI1RUIXU
+2016-12-31 15:41:04,623 INFO  [Project_Timeline.WebSocket] (default task-63) Open session:YV_Fy79ITWusK9x658fLAlAlDwjTbOCYN6Bo3hlH
+2016-12-31 15:41:07,751 INFO  [Project_Timeline.WebSocket] (default task-65) Received : {"type":"message","data":"he","username":"Jean5","channel":""}, session:YV_Fy79ITWusK9x658fLAlAlDwjTbOCYN6Bo3hlH
+2016-12-31 15:41:15,039 INFO  [Project_Timeline.WebSocket] (default task-66) Received : {"type":"message","data":"fefefe","username":"Jean42","channel":""}, session:D7KrlDImrQX5VlS9hH8mJGMxhmwOptR9qI1RUIXU
+2016-12-31 15:43:35,141 INFO  [Project_Timeline.WebSocket] (default task-67) Received : {"type":"message","data":"feefefe","username":"Jean42","channel":""}, session:D7KrlDImrQX5VlS9hH8mJGMxhmwOptR9qI1RUIXU
+2016-12-31 15:43:36,757 INFO  [Project_Timeline.WebSocket] (default task-69) Received : {"type":"message","data":"fefefefefe","username":"Jean5","channel":""}, session:YV_Fy79ITWusK9x658fLAlAlDwjTbOCYN6Bo3hlH
+2016-12-31 15:43:39,005 INFO  [Project_Timeline.WebSocket] (default task-70) Received : {"type":"message","data":"fefefefefe","username":"Jean5","channel":""}, session:YV_Fy79ITWusK9x658fLAlAlDwjTbOCYN6Bo3hlH
+2016-12-31 15:43:40,838 INFO  [Project_Timeline.WebSocket] (default task-68) Received : {"type":"message","data":"fefefefefe","username":"Jean42","channel":""}, session:D7KrlDImrQX5VlS9hH8mJGMxhmwOptR9qI1RUIXU
+2016-12-31 15:43:47,837 INFO  [Project_Timeline.WebSocket] (default task-71) Received : {"type":"message","data":"efefeffefe","username":"Jean42","channel":""}, session:D7KrlDImrQX5VlS9hH8mJGMxhmwOptR9qI1RUIXU
+2016-12-31 15:44:24,254 INFO  [Project_Timeline.WebSocket] (default task-74) Open session:C6hE0D-5DD-7dZkJ5I7_WEzS8-BQnYyUWFRCrmX8
+2016-12-31 15:44:26,400 INFO  [Project_Timeline.WebSocket] (default task-76) Closing:YV_Fy79ITWusK9x658fLAlAlDwjTbOCYN6Bo3hlH
+2016-12-31 15:44:26,400 INFO  [Project_Timeline.WebSocket] (default task-75) Closing:D7KrlDImrQX5VlS9hH8mJGMxhmwOptR9qI1RUIXU
+2016-12-31 15:44:38,490 INFO  [Project_Timeline.WebSocket] (default task-93) Open session:LM11Jcl2JyZbvBKfp_RQmG_520ECoKI50y19nhxz
+2016-12-31 15:44:41,522 INFO  [Project_Timeline.WebSocket] (default task-98) Open session:nMl_O0qccGINfzr6BlTx35iHnc3zlFeHHJV7gsnk
+2016-12-31 15:44:45,692 INFO  [Project_Timeline.WebSocket] (default task-96) Received : {"type":"message","data":"hello","username":"Jean5","channel":""}, session:LM11Jcl2JyZbvBKfp_RQmG_520ECoKI50y19nhxz
+2016-12-31 15:45:08,412 INFO  [Project_Timeline.WebSocket] (default task-97) Received : {"type":"message","data":"hello","username":"Jean45","channel":""}, session:nMl_O0qccGINfzr6BlTx35iHnc3zlFeHHJV7gsnk
+2016-12-31 15:51:53,739 INFO  [Project_Timeline.WebSocket] (default task-100) Closing:LM11Jcl2JyZbvBKfp_RQmG_520ECoKI50y19nhxz
+2016-12-31 15:51:53,739 INFO  [Project_Timeline.WebSocket] (default task-99) Closing:nMl_O0qccGINfzr6BlTx35iHnc3zlFeHHJV7gsnk
+2016-12-31 15:52:06,237 INFO  [Project_Timeline.WebSocket] (default task-119) Open session:fWR7zYwpa-hIJaK6tMLKkhHKs06VJlaN4kUXU8WR
+2016-12-31 15:52:09,380 INFO  [Project_Timeline.WebSocket] (default task-120) Closing:fWR7zYwpa-hIJaK6tMLKkhHKs06VJlaN4kUXU8WR
+2016-12-31 15:52:19,083 INFO  [Project_Timeline.WebSocket] (default task-122) Open session:Fjcai9hp-jcCz5_j_Irlu7MJ8qLsRcg-vERkzj4T
+2016-12-31 15:52:23,427 INFO  [Project_Timeline.WebSocket] (default task-124) Open session:zyUJKognO3WlOFvm_juYJO2M4pjJ8Rebs4kdhuPU
+2016-12-31 15:52:26,559 INFO  [Project_Timeline.WebSocket] (default task-125) Received : {"type":"message","data":"Hello","username":"Jean45","channel":""}, session:Fjcai9hp-jcCz5_j_Irlu7MJ8qLsRcg-vERkzj4T
+2016-12-31 15:52:30,064 INFO  [Project_Timeline.WebSocket] (default task-126) Received : {"type":"message","data":"Helloi","username":"Jean4","channel":""}, session:zyUJKognO3WlOFvm_juYJO2M4pjJ8Rebs4kdhuPU
+2016-12-31 15:55:52,535 INFO  [Project_Timeline.WebSocket] (default task-1) Closing:Fjcai9hp-jcCz5_j_Irlu7MJ8qLsRcg-vERkzj4T
+2016-12-31 15:55:52,535 INFO  [Project_Timeline.WebSocket] (default task-2) Closing:zyUJKognO3WlOFvm_juYJO2M4pjJ8Rebs4kdhuPU
+2016-12-31 15:55:57,068 INFO  [Project_Timeline.WebSocket] (default task-22) Open session:CryfXMlmCqXEuEgLX3sREidYolrRjz68SJk7v_KO
+2016-12-31 15:55:59,992 INFO  [Project_Timeline.WebSocket] (default task-19) Closing:CryfXMlmCqXEuEgLX3sREidYolrRjz68SJk7v_KO
+2016-12-31 15:56:07,978 INFO  [Project_Timeline.WebSocket] (default task-25) Open session:eMAuZU1Nt0DRKQeH2oa9_0p9hJBJRTobVo2XBoZc
+2016-12-31 15:56:12,198 INFO  [Project_Timeline.WebSocket] (default task-29) Open session:mC1JLPfCICP-sctoHCbdt6ZGq0CDr4dYIFE_aLZu
+2016-12-31 15:56:15,149 INFO  [Project_Timeline.WebSocket] (default task-26) Received : {"type":"message","data":"Hello","username":"Jean4","channel":""}, session:eMAuZU1Nt0DRKQeH2oa9_0p9hJBJRTobVo2XBoZc
+2016-12-31 15:56:25,333 INFO  [Project_Timeline.WebSocket] (default task-27) Received : {"type":"message","data":"fefefe","username":"Jean44","channel":""}, session:mC1JLPfCICP-sctoHCbdt6ZGq0CDr4dYIFE_aLZu
+2016-12-31 16:12:49,628 INFO  [Project_Timeline.WebSocket] (default task-31) Received : {"type":"message","data":"fe","username":"Jean4","channel":""}, session:eMAuZU1Nt0DRKQeH2oa9_0p9hJBJRTobVo2XBoZc
+2016-12-31 16:17:26,065 INFO  [Project_Timeline.WebSocket] (default task-34) Closing:eMAuZU1Nt0DRKQeH2oa9_0p9hJBJRTobVo2XBoZc
+2016-12-31 16:17:26,065 INFO  [Project_Timeline.WebSocket] (default task-32) Closing:mC1JLPfCICP-sctoHCbdt6ZGq0CDr4dYIFE_aLZu
+2016-12-31 16:17:31,924 INFO  [Project_Timeline.WebSocket] (default task-51) Open session:G0LOECQvXLu-Pphy-HxeqzTxMDF8uFy2vf375shx
+2016-12-31 16:17:35,964 INFO  [Project_Timeline.WebSocket] (default task-53) Open session:TkiwNzJwYgMtvtmUaySXSxhqIAL2lUzxXvAYuEkf
+2016-12-31 16:17:39,273 INFO  [Project_Timeline.WebSocket] (default task-55) Received : {"type":"message","data":"hellp","username":"Jean44","channel":""}, session:G0LOECQvXLu-Pphy-HxeqzTxMDF8uFy2vf375shx
+2016-12-31 16:17:43,441 INFO  [Project_Timeline.WebSocket] (default task-56) Received : {"type":"message","data":"gefegeeg","username":"Jean4","channel":""}, session:TkiwNzJwYgMtvtmUaySXSxhqIAL2lUzxXvAYuEkf
+2016-12-31 16:20:12,344 INFO  [Project_Timeline.WebSocket] (default task-58) Closing:G0LOECQvXLu-Pphy-HxeqzTxMDF8uFy2vf375shx
+2016-12-31 16:20:13,464 INFO  [Project_Timeline.WebSocket] (default task-57) Closing:TkiwNzJwYgMtvtmUaySXSxhqIAL2lUzxXvAYuEkf
+2016-12-31 16:20:26,705 INFO  [Project_Timeline.WebSocket] (default task-83) Open session:4G5fHGOf5VxwYGUmu5S3IGaMzoNuUoHlMehs9ijs
+2016-12-31 16:20:29,600 INFO  [Project_Timeline.WebSocket] (default task-91) Closing:4G5fHGOf5VxwYGUmu5S3IGaMzoNuUoHlMehs9ijs
+2016-12-31 16:20:36,771 INFO  [Project_Timeline.WebSocket] (default task-92) Open session:LBtbo82Y6mjP_TLp9hjd-pCW83HEgz-HkvZmWTCM
+2016-12-31 16:20:39,334 INFO  [Project_Timeline.WebSocket] (default task-94) Open session:hNBtfIl9G6xdGaxv9okcf0c9nbb1HIHsSL8hS4HR
+2016-12-31 16:20:42,454 INFO  [Project_Timeline.WebSocket] (default task-98) Received : {"type":"message","data":"Hello","username":"Jean4","channel":""}, session:LBtbo82Y6mjP_TLp9hjd-pCW83HEgz-HkvZmWTCM
+2016-12-31 16:20:54,870 INFO  [Project_Timeline.WebSocket] (default task-96) Received : {"type":"message","data":"hihi","username":"Jean5","channel":""}, session:hNBtfIl9G6xdGaxv9okcf0c9nbb1HIHsSL8hS4HR
+2016-12-31 16:21:44,747 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.0.Final
+2016-12-31 16:21:45,136 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-12-31 16:21:45,205 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 10.0.0.CR5 (WildFly Core 2.0.5.Final) starting
+2016-12-31 16:21:45,206 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_73\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_73\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_73
+	java.io.tmpdir = C:\Users\moi\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_73/bin/server;C:/Program Files/Java/jre1.8.0_73/bin;C:/Program Files/Java/jre1.8.0_73/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\bin;C:\Users\moi\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;C:\WINDOWS\System32;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_73-b02
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_73
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.73-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5
+	jboss.host.name = colin
+	jboss.modules.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = colin
+	jboss.qualified.host.name = colin
+	jboss.server.base.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone
+	jboss.server.config.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\configuration
+	jboss.server.data.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\data
+	jboss.server.deploy.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\data\content
+	jboss.server.log.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\log
+	jboss.server.name = colin
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/configuration/logging.properties
+	module.path = C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/modules
+	org.jboss.boot.log.file = C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 10.x
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_73\lib\resources.jar;C:\Program Files\Java\jre1.8.0_73\lib\rt.jar;C:\Program Files\Java\jre1.8.0_73\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_73\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_73\lib\jce.jar;C:\Program Files\Java\jre1.8.0_73\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_73\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_73\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_73\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\bin
+	user.home = C:\Users\moi
+	user.language = fr
+	user.name = moi
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2016-12-31 16:21:45,207 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.x -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5 -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=Cp1252 
+2016-12-31 16:21:46,861 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found Project_Timeline.war in deployment directory. To trigger deployment create a file called Project_Timeline.war.dodeploy
+2016-12-31 16:21:46,956 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-12-31 16:21:46,977 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.3.4.Final
+2016-12-31 16:21:46,983 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.3.4.Final
+2016-12-31 16:21:47,159 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-12-31 16:21:47,165 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-12-31 16:21:47,167 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2016-12-31 16:21:47,169 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2016-12-31 16:21:47,169 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2016-12-31 16:21:47,172 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2016-12-31 16:21:47,172 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=4.9.4.Final
+2016-12-31 16:21:47,181 INFO  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.1.Final)
+2016-12-31 16:21:47,293 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-12-31 16:21:47,615 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0003: Undertow 1.3.11.Final starting
+2016-12-31 16:21:47,859 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 1.3.11.Final starting
+2016-12-31 16:21:48,670 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path 'C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-12-31 16:21:49,029 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-12-31 16:21:49,031 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-12-31 16:21:49,173 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2016-12-31 16:21:49,173 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2016-12-31 16:21:49,324 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2016-12-31 16:21:49,325 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-12-31 16:21:49,341 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2016-12-31 16:21:49,343 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0018: Host default-host starting
+2016-12-31 16:21:49,369 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 4.0.17.Final-wildfly-1
+2016-12-31 16:21:49,509 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2016-12-31 16:21:50,490 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "Project_Timeline.war" (runtime-name: "Project_Timeline.war")
+2016-12-31 16:21:50,510 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\deployments
+2016-12-31 16:21:51,166 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: WFLYSRV0083: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:269)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:163)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:235)
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:192)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:150)
+	... 6 more
+
+2016-12-31 16:21:51,416 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-12-31 16:21:52,048 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2016-12-31 16:21:52,049 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2016-12-31 16:21:52,048 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2016-12-31 16:21:52,496 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.1.2.Final (Apache CXF 3.1.4) 
+2016-12-31 16:21:54,203 INFO  [io.undertow.websockets.jsr] (ServerService Thread Pool -- 59) UT026003: Adding annotated server endpoint class Project_Timeline.WebSocket for path /web
+2016-12-31 16:21:54,568 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0021: Registered web context: /Project_Timeline
+2016-12-31 16:21:54,574 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: WFLYSRV0083: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2016-12-31 16:21:54,827 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 34) WFLYSRV0010: Deployed "Project_Timeline.war" (runtime-name : "Project_Timeline.war")
+2016-12-31 16:21:54,828 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: WFLYSRV0083: Failed to start the http-interface service
+
+2016-12-31 16:21:55,033 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0063: Http management interface is not enabled
+2016-12-31 16:21:55,033 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
+2016-12-31 16:21:55,033 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 10.0.0.CR5 (WildFly Core 2.0.5.Final) started (with errors) in 10817ms - Started 330 of 641 services (2 services failed or missing dependencies, 397 services are lazy, passive or on-demand)
+2016-12-31 16:22:07,334 INFO  [Project_Timeline.WebSocket] (default task-4) Open session:e5zLw244TFpxeK9i-82-_EaAl3AY8Lqn-1vYn8Go
+2016-12-31 16:22:16,245 INFO  [Project_Timeline.WebSocket] (default task-18) Open session:gOk9z9qDz3pEB4k_lgeycj4J9UHZ32jMtk3yiPxM
+2016-12-31 16:22:20,392 INFO  [Project_Timeline.WebSocket] (default task-20) Closing:gOk9z9qDz3pEB4k_lgeycj4J9UHZ32jMtk3yiPxM
+2016-12-31 16:22:27,444 INFO  [Project_Timeline.WebSocket] (default task-22) Open session:Toh_A7bcxzIlNDHHxrELhlfVJt6dhO_WhNlj8vtU
+2016-12-31 16:22:32,967 INFO  [Project_Timeline.WebSocket] (default task-24) Open session:GVt9B4tlKlaApSo3oOXdycgjqyOR4UI_uxZSsP2l
+2016-12-31 16:24:14,273 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.0.Final
+2016-12-31 16:24:14,447 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-12-31 16:24:14,517 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 10.0.0.CR5 (WildFly Core 2.0.5.Final) starting
+2016-12-31 16:24:14,518 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_73\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_73\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_73
+	java.io.tmpdir = C:\Users\moi\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_73/bin/server;C:/Program Files/Java/jre1.8.0_73/bin;C:/Program Files/Java/jre1.8.0_73/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\bin;C:\Users\moi\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;C:\WINDOWS\System32;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_73-b02
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_73
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.73-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5
+	jboss.host.name = colin
+	jboss.modules.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = colin
+	jboss.qualified.host.name = colin
+	jboss.server.base.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone
+	jboss.server.config.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\configuration
+	jboss.server.data.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\data
+	jboss.server.deploy.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\data\content
+	jboss.server.log.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\log
+	jboss.server.name = colin
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/configuration/logging.properties
+	module.path = C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/modules
+	org.jboss.boot.log.file = C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 10.x
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_73\lib\resources.jar;C:\Program Files\Java\jre1.8.0_73\lib\rt.jar;C:\Program Files\Java\jre1.8.0_73\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_73\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_73\lib\jce.jar;C:\Program Files\Java\jre1.8.0_73\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_73\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_73\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_73\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\bin
+	user.home = C:\Users\moi
+	user.language = fr
+	user.name = moi
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2016-12-31 16:24:14,519 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.x -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5 -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=Cp1252 
+2016-12-31 16:24:15,797 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found Project_Timeline.war in deployment directory. To trigger deployment create a file called Project_Timeline.war.dodeploy
+2016-12-31 16:24:15,829 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-12-31 16:24:15,844 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.3.4.Final
+2016-12-31 16:24:15,849 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.3.4.Final
+2016-12-31 16:24:15,882 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-12-31 16:24:15,887 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2016-12-31 16:24:15,893 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2016-12-31 16:24:15,893 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-12-31 16:24:15,896 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2016-12-31 16:24:15,897 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2016-12-31 16:24:15,898 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-12-31 16:24:15,924 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=4.9.4.Final
+2016-12-31 16:24:15,928 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.1.Final)
+2016-12-31 16:24:15,944 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.17.Final-wildfly-1
+2016-12-31 16:24:16,036 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0003: Undertow 1.3.11.Final starting
+2016-12-31 16:24:16,037 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 1.3.11.Final starting
+2016-12-31 16:24:16,045 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2016-12-31 16:24:16,046 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-12-31 16:24:16,059 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-12-31 16:24:16,063 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-12-31 16:24:16,149 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path 'C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-12-31 16:24:16,160 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2016-12-31 16:24:16,162 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2016-12-31 16:24:16,180 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2016-12-31 16:24:16,181 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2016-12-31 16:24:16,367 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2016-12-31 16:24:16,598 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "Project_Timeline.war" (runtime-name: "Project_Timeline.war")
+2016-12-31 16:24:16,600 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\deployments
+2016-12-31 16:24:16,672 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2016-12-31 16:24:16,673 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2016-12-31 16:24:16,693 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-12-31 16:24:16,719 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: WFLYSRV0083: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:269)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:163)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:235)
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:192)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:150)
+	... 6 more
+
+2016-12-31 16:24:16,824 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.1.2.Final (Apache CXF 3.1.4) 
+2016-12-31 16:24:17,365 INFO  [io.undertow.websockets.jsr] (ServerService Thread Pool -- 61) UT026003: Adding annotated server endpoint class Project_Timeline.WebSocket for path /web
+2016-12-31 16:24:17,712 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0021: Registered web context: /Project_Timeline
+2016-12-31 16:24:17,717 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: WFLYSRV0083: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2016-12-31 16:24:17,922 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 34) WFLYSRV0010: Deployed "Project_Timeline.war" (runtime-name : "Project_Timeline.war")
+2016-12-31 16:24:17,924 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: WFLYSRV0083: Failed to start the http-interface service
+
+2016-12-31 16:24:18,051 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0063: Http management interface is not enabled
+2016-12-31 16:24:18,052 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
+2016-12-31 16:24:18,052 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 10.0.0.CR5 (WildFly Core 2.0.5.Final) started (with errors) in 4065ms - Started 330 of 641 services (2 services failed or missing dependencies, 397 services are lazy, passive or on-demand)
+2016-12-31 16:24:31,103 INFO  [Project_Timeline.WebSocket] (default task-4) Open session:EranXTclkPju5ceWw4dwSlE8Y4mri8m-3GRO1Jlv
+2016-12-31 16:24:37,901 INFO  [Project_Timeline.WebSocket] (default task-7) Open session:7pKSWwcT52rqFEi77XEyoYvIKvqXk86DX9x9DnnG
+2016-12-31 16:24:41,670 INFO  [Project_Timeline.WebSocket] (default task-8) Closing:7pKSWwcT52rqFEi77XEyoYvIKvqXk86DX9x9DnnG
+2016-12-31 16:24:50,011 INFO  [Project_Timeline.WebSocket] (default task-10) Open session:sJaeQ3IGX-xs7yCXziFAPz_MOPQigVAH0yqgBx6D
+2016-12-31 16:24:54,282 INFO  [Project_Timeline.WebSocket] (default task-12) Open session:gAVbIOOpyju0h51m13uIYh-AEMmIFHIoys4sfy9N
+2016-12-31 16:40:50,213 INFO  [Project_Timeline.WebSocket] (default task-17) Closing:sJaeQ3IGX-xs7yCXziFAPz_MOPQigVAH0yqgBx6D
+2016-12-31 16:40:51,867 INFO  [Project_Timeline.WebSocket] (default task-20) Closing:gAVbIOOpyju0h51m13uIYh-AEMmIFHIoys4sfy9N
+2016-12-31 16:41:10,456 INFO  [Project_Timeline.WebSocket] (default task-25) Open session:tcur4bO_09I1fN0eMFx-271BchYJTvVpwj1tOclx
+2016-12-31 16:53:15,947 INFO  [Project_Timeline.WebSocket] (default task-28) Open session:NQ9NawrR62VbvVxPaoMuasDjNZHYJC8k5tVNOTuq
+2016-12-31 16:53:24,836 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.0.Final
+2016-12-31 16:53:25,137 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-12-31 16:53:25,203 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 10.0.0.CR5 (WildFly Core 2.0.5.Final) starting
+2016-12-31 16:53:25,204 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_73\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_73\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_73
+	java.io.tmpdir = C:\Users\moi\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_73/bin/server;C:/Program Files/Java/jre1.8.0_73/bin;C:/Program Files/Java/jre1.8.0_73/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\bin;C:\Users\moi\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;C:\WINDOWS\System32;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_73-b02
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_73
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.73-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5
+	jboss.host.name = colin
+	jboss.modules.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = colin
+	jboss.qualified.host.name = colin
+	jboss.server.base.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone
+	jboss.server.config.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\configuration
+	jboss.server.data.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\data
+	jboss.server.deploy.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\data\content
+	jboss.server.log.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\log
+	jboss.server.name = colin
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/configuration/logging.properties
+	module.path = C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/modules
+	org.jboss.boot.log.file = C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 10.x
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_73\lib\resources.jar;C:\Program Files\Java\jre1.8.0_73\lib\rt.jar;C:\Program Files\Java\jre1.8.0_73\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_73\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_73\lib\jce.jar;C:\Program Files\Java\jre1.8.0_73\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_73\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_73\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_73\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\bin
+	user.home = C:\Users\moi
+	user.language = fr
+	user.name = moi
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2016-12-31 16:53:25,204 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.x -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5 -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=Cp1252 
+2016-12-31 16:53:26,579 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found Project_Timeline.war in deployment directory. To trigger deployment create a file called Project_Timeline.war.dodeploy
+2016-12-31 16:53:26,617 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-12-31 16:53:26,642 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.3.4.Final
+2016-12-31 16:53:26,651 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.3.4.Final
+2016-12-31 16:53:26,697 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-12-31 16:53:26,704 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2016-12-31 16:53:26,710 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2016-12-31 16:53:26,710 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2016-12-31 16:53:26,713 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-12-31 16:53:26,714 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-12-31 16:53:26,717 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=4.9.4.Final
+2016-12-31 16:53:26,724 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2016-12-31 16:53:26,830 INFO  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.1.Final)
+2016-12-31 16:53:26,833 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0003: Undertow 1.3.11.Final starting
+2016-12-31 16:53:26,834 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.17.Final-wildfly-1
+2016-12-31 16:53:26,830 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 1.3.11.Final starting
+2016-12-31 16:53:26,845 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-12-31 16:53:26,852 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-12-31 16:53:26,861 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2016-12-31 16:53:26,865 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-12-31 16:53:26,948 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path 'C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-12-31 16:53:26,956 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2016-12-31 16:53:26,957 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2016-12-31 16:53:27,004 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2016-12-31 16:53:27,004 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2016-12-31 16:53:27,166 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2016-12-31 16:53:27,370 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\deployments
+2016-12-31 16:53:27,372 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "Project_Timeline.war" (runtime-name: "Project_Timeline.war")
+2016-12-31 16:53:27,469 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-12-31 16:53:27,499 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2016-12-31 16:53:27,499 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-6) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2016-12-31 16:53:27,499 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2016-12-31 16:53:27,553 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: WFLYSRV0083: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:269)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:163)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:235)
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:192)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:150)
+	... 6 more
+
+2016-12-31 16:53:27,611 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.1.2.Final (Apache CXF 3.1.4) 
+2016-12-31 16:53:28,187 INFO  [io.undertow.websockets.jsr] (ServerService Thread Pool -- 59) UT026003: Adding annotated server endpoint class Project_Timeline.WebSocket for path /web
+2016-12-31 16:53:28,436 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0021: Registered web context: /Project_Timeline
+2016-12-31 16:53:28,441 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: WFLYSRV0083: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2016-12-31 16:53:28,673 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 34) WFLYSRV0010: Deployed "Project_Timeline.war" (runtime-name : "Project_Timeline.war")
+2016-12-31 16:53:28,675 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: WFLYSRV0083: Failed to start the http-interface service
+
+2016-12-31 16:53:28,786 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0063: Http management interface is not enabled
+2016-12-31 16:53:28,786 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
+2016-12-31 16:53:28,787 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 10.0.0.CR5 (WildFly Core 2.0.5.Final) started (with errors) in 4236ms - Started 330 of 641 services (2 services failed or missing dependencies, 397 services are lazy, passive or on-demand)
+2016-12-31 16:54:02,668 INFO  [Project_Timeline.WebSocket] (default task-5) Open session:hzRMf6gCYKzO4GADBSFbSd_At8aSdoOpj8sp4xWD
+2016-12-31 16:54:04,275 INFO  [Project_Timeline.WebSocket] (default task-7) Open session:0eaJkt_Zyb_MUkLpUeDUQmR_LsTlUKl6osAJgmaB
+2016-12-31 16:54:17,936 INFO  [Project_Timeline.WebSocket] (default task-11) Closing:hzRMf6gCYKzO4GADBSFbSd_At8aSdoOpj8sp4xWD
+2016-12-31 16:54:19,150 INFO  [Project_Timeline.WebSocket] (default task-12) Closing:0eaJkt_Zyb_MUkLpUeDUQmR_LsTlUKl6osAJgmaB
+2016-12-31 17:03:02,899 INFO  [Project_Timeline.WebSocket] (default task-16) Open session:gTDlscs29KleLav2XeE-1pH225gLVLZsha3sIJZ9
+2016-12-31 17:03:05,734 INFO  [Project_Timeline.WebSocket] (default task-18) Open session:jgebCgjZ_huJJd_h0thruNpSBtvWTL1Gum8tIZrH
+2016-12-31 17:05:09,751 INFO  [Project_Timeline.WebSocket] (default task-21) Closing:gTDlscs29KleLav2XeE-1pH225gLVLZsha3sIJZ9
+2016-12-31 17:15:13,214 INFO  [Project_Timeline.WebSocket] (default task-35) Open session:SrOs6_wsZC9j4bw8atq7ItDQPEElMe9TBvewUD5-
+2016-12-31 17:15:18,847 INFO  [Project_Timeline.WebSocket] (default task-37) Open session:RGyAnHz8ZXMhu_TyWvyEfsjRAQz_pm8dLPQwX7SE
+2016-12-31 17:15:37,495 INFO  [Project_Timeline.WebSocket] (default task-40) Closing:RGyAnHz8ZXMhu_TyWvyEfsjRAQz_pm8dLPQwX7SE
+2016-12-31 17:15:38,390 INFO  [Project_Timeline.WebSocket] (default task-43) Closing:SrOs6_wsZC9j4bw8atq7ItDQPEElMe9TBvewUD5-
+2016-12-31 17:16:14,920 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.0.Final
+2016-12-31 17:16:16,860 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-12-31 17:16:16,933 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 10.0.0.CR5 (WildFly Core 2.0.5.Final) starting
+2016-12-31 17:16:16,934 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_73\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_73\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_73
+	java.io.tmpdir = C:\Users\moi\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_73/bin/server;C:/Program Files/Java/jre1.8.0_73/bin;C:/Program Files/Java/jre1.8.0_73/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\bin;C:\Users\moi\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;C:\WINDOWS\System32;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_73-b02
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_73
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.73-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5
+	jboss.host.name = colin
+	jboss.modules.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = colin
+	jboss.qualified.host.name = colin
+	jboss.server.base.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone
+	jboss.server.config.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\configuration
+	jboss.server.data.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\data
+	jboss.server.deploy.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\data\content
+	jboss.server.log.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\log
+	jboss.server.name = colin
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/configuration/logging.properties
+	module.path = C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/modules
+	org.jboss.boot.log.file = C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 10.x
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_73\lib\resources.jar;C:\Program Files\Java\jre1.8.0_73\lib\rt.jar;C:\Program Files\Java\jre1.8.0_73\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_73\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_73\lib\jce.jar;C:\Program Files\Java\jre1.8.0_73\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_73\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_73\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_73\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = FR
+	user.dir = C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\bin
+	user.home = C:\Users\moi
+	user.language = fr
+	user.name = moi
+	user.script = 
+	user.timezone = Europe/Paris
+	user.variant = 
+2016-12-31 17:16:16,935 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.x -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/log/boot.log -Dlogging.configuration=file:/C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5/standalone/configuration/logging.properties -Djboss.home.dir=C:/Users/moi/Documents/Cours/Licence_3/Semester_1/Web_programming_2_0/wildfly-10.0.0.CR5 -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=Cp1252 
+2016-12-31 17:16:27,947 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found Project_Timeline.war in deployment directory. To trigger deployment create a file called Project_Timeline.war.dodeploy
+2016-12-31 17:16:28,012 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-12-31 17:16:28,154 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.3.4.Final
+2016-12-31 17:16:28,215 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.3.4.Final
+2016-12-31 17:16:28,319 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-12-31 17:16:28,330 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2016-12-31 17:16:28,330 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2016-12-31 17:16:28,332 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2016-12-31 17:16:28,336 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2016-12-31 17:16:28,343 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-12-31 17:16:28,343 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-12-31 17:16:28,593 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.1.Final)
+2016-12-31 17:16:28,708 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=4.9.4.Final
+2016-12-31 17:16:29,473 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0003: Undertow 1.3.11.Final starting
+2016-12-31 17:16:30,168 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 1.3.11.Final starting
+2016-12-31 17:16:31,196 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-12-31 17:16:31,198 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-12-31 17:16:31,407 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path 'C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-12-31 17:16:32,414 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2016-12-31 17:16:32,414 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-12-31 17:16:32,805 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2016-12-31 17:16:32,805 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2016-12-31 17:16:33,491 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2016-12-31 17:16:33,493 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2016-12-31 17:16:33,533 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 4.0.17.Final-wildfly-1
+2016-12-31 17:16:33,910 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2016-12-31 17:16:35,137 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\moi\Documents\Cours\Licence_3\Semester_1\Web_programming_2_0\wildfly-10.0.0.CR5\standalone\deployments
+2016-12-31 17:16:35,232 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "Project_Timeline.war" (runtime-name: "Project_Timeline.war")
+2016-12-31 17:16:37,000 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: WFLYSRV0083: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:269)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:163)
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:235)
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:192)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:150)
+	... 6 more
+
+2016-12-31 17:16:37,590 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-6) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2016-12-31 17:16:37,591 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2016-12-31 17:16:37,590 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2016-12-31 17:16:37,728 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-12-31 17:16:39,244 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.1.2.Final (Apache CXF 3.1.4) 
+2016-12-31 17:16:48,187 INFO  [io.undertow.websockets.jsr] (ServerService Thread Pool -- 59) UT026003: Adding annotated server endpoint class Project_Timeline.WebSocket for path /web
+2016-12-31 17:16:48,479 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0021: Registered web context: /Project_Timeline
+2016-12-31 17:16:48,485 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: WFLYSRV0083: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2016-12-31 17:16:48,820 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 34) WFLYSRV0010: Deployed "Project_Timeline.war" (runtime-name : "Project_Timeline.war")
+2016-12-31 17:16:48,821 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: WFLYSRV0083: Failed to start the http-interface service
+
+2016-12-31 17:16:49,027 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0063: Http management interface is not enabled
+2016-12-31 17:16:49,027 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
+2016-12-31 17:16:49,027 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 10.0.0.CR5 (WildFly Core 2.0.5.Final) started (with errors) in 34819ms - Started 330 of 641 services (2 services failed or missing dependencies, 397 services are lazy, passive or on-demand)
+2016-12-31 17:18:09,315 INFO  [Project_Timeline.WebSocket] (default task-15) Open session:tSUmCuLje5dF9U5jCkF5w_ClBsMXph-RUEf-Ce1V
+2016-12-31 17:18:12,591 INFO  [Project_Timeline.WebSocket] (default task-17) Open session:sy6vp09E3Okv-gsqoWFQedEQgYZ81m_Rn0Rwl6p9
+2016-12-31 17:19:03,197 INFO  [Project_Timeline.WebSocket] (default task-21) Open session:5m3-oeZfE_ILzW68LjnwzruIoS3EFrKZ--HeWHdP
+2016-12-31 17:19:05,507 INFO  [Project_Timeline.WebSocket] (default task-23) Open session:jpatGlNdnt3MKgx9y_6r09K6AXyIG289D2x8HTwI
+2016-12-31 17:19:12,015 INFO  [Project_Timeline.WebSocket] (default task-26) Closing:5m3-oeZfE_ILzW68LjnwzruIoS3EFrKZ--HeWHdP
+2016-12-31 17:19:22,156 INFO  [Project_Timeline.WebSocket] (default task-27) Closing:jpatGlNdnt3MKgx9y_6r09K6AXyIG289D2x8HTwI
+2016-12-31 20:38:15,511 INFO  [Project_Timeline.WebSocket] (default task-34) Closing:sy6vp09E3Okv-gsqoWFQedEQgYZ81m_Rn0Rwl6p9
+2016-12-31 20:38:15,511 INFO  [Project_Timeline.WebSocket] (default task-33) Closing:tSUmCuLje5dF9U5jCkF5w_ClBsMXph-RUEf-Ce1V
+2016-12-31 20:38:15,582 ERROR [stderr] (default task-34) java.io.IOException: UT002002: Channel is closed
+2016-12-31 20:38:15,582 ERROR [stderr] (default task-34) 	at io.undertow.websockets.core.WebSocketChannel.send(WebSocketChannel.java:333)
+2016-12-31 20:38:15,582 ERROR [stderr] (default task-34) 	at io.undertow.websockets.core.WebSockets.sendBlockingInternal(WebSockets.java:466)
+2016-12-31 20:38:15,582 ERROR [stderr] (default task-34) 	at io.undertow.websockets.core.WebSockets.sendTextBlocking(WebSockets.java:96)
+2016-12-31 20:38:15,582 ERROR [stderr] (default task-34) 	at io.undertow.websockets.jsr.WebSocketSessionRemoteEndpoint$BasicWebSocketSessionRemoteEndpoint.sendText(WebSocketSessionRemoteEndpoint.java:258)
+2016-12-31 20:38:15,582 ERROR [stderr] (default task-34) 	at Project_Timeline.WebSocket.sendMessageToAll(WebSocket.java:47)
+2016-12-31 20:38:15,582 ERROR [stderr] (default task-34) 	at Project_Timeline.WebSocket.close(WebSocket.java:65)
+2016-12-31 20:38:15,583 ERROR [stderr] (default task-34) 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2016-12-31 20:38:15,583 ERROR [stderr] (default task-34) 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+2016-12-31 20:38:15,583 ERROR [stderr] (default task-34) 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+2016-12-31 20:38:15,583 ERROR [stderr] (default task-34) 	at java.lang.reflect.Method.invoke(Unknown Source)
+2016-12-31 20:38:15,583 ERROR [stderr] (default task-34) 	at io.undertow.websockets.jsr.annotated.BoundMethod.invoke(BoundMethod.java:87)
+2016-12-31 20:38:15,583 ERROR [stderr] (default task-34) 	at io.undertow.websockets.jsr.annotated.AnnotatedEndpoint$4.run(AnnotatedEndpoint.java:204)
+2016-12-31 20:38:15,583 ERROR [stderr] (default task-34) 	at io.undertow.websockets.jsr.ServerWebSocketContainer.invokeEndpointMethod(ServerWebSocketContainer.java:553)
+2016-12-31 20:38:15,584 ERROR [stderr] (default task-34) 	at io.undertow.websockets.jsr.ServerWebSocketContainer$5.run(ServerWebSocketContainer.java:538)
+2016-12-31 20:38:15,584 ERROR [stderr] (default task-34) 	at io.undertow.websockets.jsr.OrderedExecutor$ExecutorTask.run(OrderedExecutor.java:67)
+2016-12-31 20:38:15,584 ERROR [stderr] (default task-34) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+2016-12-31 20:38:15,584 ERROR [stderr] (default task-34) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+2016-12-31 20:38:15,584 ERROR [stderr] (default task-34) 	at java.lang.Thread.run(Unknown Source)

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Text_BMI_Calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="40dp"
+        android:text="@string/BMI_Calculator"
+        android:textSize="25sp"
+        android:typeface="serif" />
+
+    <!-- Textview for WEIGHT(KG) text -->
+    <TextView
+        android:id="@+id/Text_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:text="@string/lenght_BMI"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/Edit_length"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/centimetres"
+        android:textAlignment="center" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/Text_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:text="@string/weight_BMI"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/Edit_weight"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/kilogramme"
+        android:textAlignment="center">
+    </EditText>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        />
+
+        <Button
+            android:id="@+id/Button_compute"
+            android:layout_width="158dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:longClickable="true"
+            android:text="@string/button1_BMI" />
+
+        <Button
+            android:id="@+id/Button_reset"
+            android:layout_width="158dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:longClickable="true"
+            android:text="@string/button2_BMI" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Text_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+

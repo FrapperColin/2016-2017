@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/currentTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ffffff80"
+        />
+
+    <Button
+        android:id="@+id/new_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="CreateAlarm"
+        android:text="@string/new_alarm"
+        android:textColor="#ffffff80"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"/>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/empty"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="300dp"
+        android:textColor="@color/red"
+        />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Note"
+        android:textSize="16sp"
+        android:textColor="#ffffff80"
+        />
+</LinearLayout>

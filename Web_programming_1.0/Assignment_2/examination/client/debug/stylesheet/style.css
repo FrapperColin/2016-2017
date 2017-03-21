@@ -1,0 +1,209 @@
+/*
+BODY
+*/
+
+body
+{
+  background-image: url(../image/background_yellow.png); /* background yellow*/
+  font-family:"trebuchet ms",sans-serif; /*police of the text */
+  color: #181818; /* back color */
+  width: 80%; /* 80%  */
+  margin: 0 auto; /* auto marge */
+  min-height: 80%;
+  padding-bottom: 25px;
+
+}
+
+/* Header */
+header
+{
+  background: url('../image/separateur.png') repeat-x bottom; /* I used an image to separate header from menu */
+}
+
+header h1
+{
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top :20px;
+}
+
+
+
+/* Navigation */
+
+nav
+{
+  margin-top: 20px;   /* separate with the header */
+  margin-bottom : 20px; /* separate with the content */
+}
+
+nav ul
+{
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333; /* between grey and black */
+}
+
+nav li
+{
+  float: left;
+  border-right: 1px solid white;
+}
+
+nav li a
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none; /* Otherwise its surligne */
+}
+
+nav li a:hover
+{
+  background-color: green;
+  font-size: 120%;
+}
+
+article
+{
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-style : groove;
+  border-radius : 20px;
+}
+
+article h3
+{
+  padding-bottom: 20px;
+}
+
+#template_question .questionForm  /* Background color, padding, and width */
+{
+  background-color:#FAFAFA;
+  padding:10px;
+  width:1050px;
+}
+
+.alternativeRow
+{
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.show_score
+{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.hs_title
+{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+form
+{
+  background-color:#FAFAFA;
+  padding:10px;
+  width:1050px;
+}
+
+#template_question .questionForm label /* Put some space between label */
+{
+  margin-top:10px;
+  display:block;
+}
+
+#formUsername label
+{
+  margin-top:10px;
+  display:block;
+}
+
+
+#template_question .questionForm input
+{
+  padding:3px;
+  border:1px solid #F5C5C5;
+  border-radius:5px;
+  box-shadow:1px 1px 2px #C0C0C0 inset;
+  margin-top :10px;
+  margin-bottom: 10px;
+}
+
+#formUsername input
+{
+  padding:3px;
+  border:1px solid #F5C5C5;
+  border-radius:5px;
+  box-shadow:1px 1px 2px #C0C0C0 inset;
+  margin-top :10px;
+  margin-bottom: 10px;
+}
+
+.newGame
+{
+  border-radius: 15px;
+  margin: 0 auto;
+  height: 30px;
+  padding: 10px;
+  padding-top: 20px;
+  width: 200px;
+  background: blue;
+  border: 2px solid #f7dd2e;
+  font-size: 20px;
+  text-align: center;
+}
+
+.newGame a
+{
+  padding-top: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  font-size: 24px;
+  margin: 10px;
+  text-align: center;
+
+  counter-reset: rowNumber;
+}
+
+table tr {
+  counter-increment: rowNumber;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+td {
+  border-radius: 4px;
+  background: #e4e3dd;
+}
+
+
+.color
+{
+  color: red;
+}
+
+.questionHead
+{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+footer
+{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 0.8em;
+  margin-top: 30px;
+}
+

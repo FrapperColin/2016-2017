@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">My_project</string>
+
+
+    <string name="Start">Tap to start </string>
+    <string name="restart">Tap to continue </string>
+
+    <string name="game_over">GAME OVER</string>
+    <string name="start_score">Score : 0 </string>
+    <string name="catch_ball">Catch the ball </string>
+    <string name="pink_point">30 points </string>
+    <string name="orange_point">10 points </string>
+    <string name="black_point"> Game Over </string>
+    <string name="startGame"> Start </string>
+    <string name="setting">Setting </string>
+    <string name="highscore">Highscore : </string>
+    <string name="disable_sound">If you want disable or activate sound click here : </string>
+    <string name="disable">Disable sound ! </string>
+    <string name="activate">Activate sound ! </string>
+    <string name="preference">Choose your preferences : </string>
+    <string name="preferences">Preference ! </string>
+    <string name="prefs_back_color_key">Background color</string>
+    <string name="last_score">Your last score is : </string>
+    <string name="send_via">Send score with : </string>
+    <string name="no_messaging_app">Nothing installed to send your score </string>
+
+
+
+
+
+</resources>

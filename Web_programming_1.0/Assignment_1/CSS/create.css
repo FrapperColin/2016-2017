@@ -1,0 +1,212 @@
+/*
+BODY
+*/
+body 
+{ 
+    background: url('https://1dv525.github.io/cf222jb-examination-1/Images/background_yellow.png');  /* background yellow*/
+    font-family:"trebuchet ms",sans-serif; /*police of the text */
+    color: #181818; /* back color */
+    width: 80%; /* 80%  */
+    margin: 0 auto; /* auto marge */
+}
+/* Title underline */
+h3
+{
+    text-decoration:underline;  
+}
+/* margin to center the image */
+img.france
+{
+    margin-right: 100px;
+    margin-left: 20px;
+}
+
+img
+{
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+ /* Header */
+
+header
+{
+    background: url('https://1dv525.github.io/cf222jb-examination-1/Images/separateur.png') repeat-x bottom; /* I used an image to separate header from menu */ 
+}
+
+header h1
+{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Navigation */
+
+nav
+{
+    margin-top: 20px;   /* separate with the header */
+    margin-bottom : 20px; /* separate with the content */
+}
+
+nav ul 
+{
+    list-style-type: none;
+    padding: 0; 
+    overflow: hidden;
+    background-color: #333; /* between grey and black */
+}
+
+nav li 
+{
+    float: left;
+    border-right: 1px solid white;
+}
+
+nav li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none; /* Otherwise its surligne */
+}
+
+nav li a:hover 
+{
+    background-color: green;
+    font-size: 120%;
+}
+
+/* Form */
+
+form 
+{ /* Background color, padding, and width */
+    background-color:#FAFAFA;
+    padding:10px;
+    width:1050px;
+}
+
+label 
+{ /* Put some space between label */
+    margin-top:10px;
+    display:block;
+}
+
+legend 
+{ /* bold permet to not have the line on the text */
+    color:#DF3F3F;
+    font-weight:bold
+}
+
+fieldset 
+{ /* For different par of the form */
+    padding:0 20px 20px 20px;
+    margin-bottom:10px;
+    border:1px solid grey;
+}
+
+
+input, textarea, select 
+{
+    padding:3px;
+    border:1px solid #F5C5C5;
+    border-radius:5px;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+}
+
+input[type=submit] 
+{
+    width:100px;
+    margin-left:5px;
+    box-shadow:1px 1px 1px #D83F3D;
+    cursor:pointer;
+    margin-top : 20px;
+}
+
+/* Article */
+
+article 
+{
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-style : groove;
+    border-radius : 20px;
+}
+
+/* List */
+
+ol.first_list
+{
+    font: italic 18px Georgia, Times, serif;
+    color: #555555;
+}
+
+ol.first_list li:hover
+{
+    background-color: #eeeeee;
+}
+
+ol.first_list span strong a
+{
+    font: bold 0.8em Georgia, Times, serif;
+    text-decoration: none;
+    border-bottom: 1px dotted #999;
+    color: #224970;
+}
+
+ol.first_list span em
+{
+    font: italic 0.7em Arial, Helvetica, sans-serif;
+    color: #555555;
+}
+
+ol.first_list span em strong a
+{
+    font: italic 1em Arial, Helvetica, sans-serif;
+}
+
+ul.second_list
+{
+    padding-bottom: 10px;
+    padding-top: 8px;
+    background-color: #224970;
+    font: italic 18px Georgia, Times, serif;
+    color: #eeeeee;
+    border: 1px solid white;
+}
+
+ul.second_list span
+{
+    font: italic 12px Verdana;
+    color: white;
+    border-top: 1px solid #aaaaaa;
+    padding-top: 2px;
+    margin-bottom: 20px;
+    margin-top: 20px ;
+}
+
+/* Main index */
+
+.index 
+{
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-style : groove;
+    border-radius : 20px;
+}
+
+/* Footer */
+
+footer
+{
+    background:  url('https://1dv525.github.io/cf222jb-examination-1/Images/ico_top.png') no-repeat top center, url('https://1dv525.github.io/cf222jb-examination-1/Images/separateur.png') repeat-x top, url('https://1dv525.github.io/cf222jb-examination-1/Images/ombre.png') repeat-x top;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 0.8em;
+    margin-top: 30px;
+}
+

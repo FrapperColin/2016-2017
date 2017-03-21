@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="stylesheet/style.css" />
+      <link rel="stylesheet" type="text/css" href="stylesheet/MemoryStyle.css" />
+      <link rel="stylesheet" type="text/css" href="stylesheet/ChatStyle.css" />
+      <link rel="stylesheet" type="text/css" href="stylesheet/CanvasStyle.css" />
+
+
+      <!-- Template window -->
+      <template id="template_window">
+        <!-- window -->
+        <div class="window">
+          <!-- windows top -->
+          <div class="window_top">
+            <i class="material-icons md-24 window_icon "></i><span class="window_title"></span><span class="window-title-extra no-pointer"></span>
+            <!-- windows button -->
+            <div class="window_buttons">
+              <span class="minimize_button" title="Minimize"><span class="minimize_icon"><i class="material-icons md-18">remove</i></span></span>
+              <span class="exit_button" title="Close"><span class="exit_cross"><i class="material-icons md-18">close</i></span></span>
+            </div>
+          </div>
+          <!-- window menu (settings) -->
+          <div class="window_menu"></div>
+          <!-- window content -->
+          <div class="window_content"></div>
+        </div>
+      </template>
+
+
+      <!-- Template tooltip -->
+      <template id="template_tooltip">
+        <!-- tool tip menu -->
+        <div class="tool_line">
+          <span class="tooltip float_left"></span>
+          <i class="material-icons md-16 float_right tooltip_close" title="Close">close</i>
+        </div>
+      </template>
+
+      <!-- Template menu memory -->
+      <template id="template_menu">
+        <a class="menu"></a>
+      </template>
+
+      <!-- Template settings -->
+      <template id="template_settings">
+        <div class="settings_wrapper">
+          <div class="settings">
+          </div>
+        </div>
+      </template>
+
+      <!-- Template settings memory-->
+      <template id="template_memory_settings">
+        <form class="settings_form">
+          <label>Choose board-size:
+            <select name="board-size">
+              <option value="2x2">2x2</option>
+              <option value="2x4">2x4</option>
+              <option value="4x4" selected>4x4</option>
+              <option value="4x2">4x2</option>
+            </select>
+          </label>
+          <input type="button" id="submit" value="Save settings" />
+        </form>
+      </template>
+
+      <!-- Template game over memory -->
+      <template id="template_memory_gameover">
+        <div class="memory_gameover_wrapper">
+          <div class="memory_gameover">
+            <h1>You win !</h1>
+            <h3>It took you <span class="memory_turns"></span> tries to win </h3>
+          </div>
+        </div>
+      </template>
+
+      <!-- Template chat setting -->
+
+      <template id="template_chat_settings">
+        <form class="settings_form">
+          <fieldset>
+            <label>Username: <input type="text" name="username" placeholder="Enter Username">
+            </label><br>
+            <label>Server: <input type="text" name="server">
+            </label><br>
+            <label>Channel: <input type="text" name="channel" placeholder="optional">
+            </label><br>
+            <label><input type="button" value="Connect" /></label>
+          </fieldset>
+        </form>
+      </template>
+
+      <!-- Template chat app -->
+      <template id="template_chat_app">
+        <div class="chat_message_list">
+          <ul>
+          </ul>
+        </div>
+        <div class="chat_form">
+          <form>
+            <textarea class="chat_inputField" title="Message"></textarea>
+            <input class="chat_send" title="Send" type="button" value="Send" disabled="disabled">
+          </form>
+        </div>
+      </template>
+
+      <!-- Template Chat message -->
+      <template id="template_chat_message">
+        <li>
+          <div class="chat_message_line">
+            <span class="chat_username"></span><span class="chat_message"></span>
+          </div>
+        </li>
+      </template>
+
+      <!-- Template History -->
+      <template id="template_chat_history">
+        <div class="chat_history">
+          <i class="material-icons md-12">history</i> History <i class="material-icons md-12">keyboard_arrow_up</i>
+        </div>
+      </template>
+
+      <!-- Template canvas settings -->
+      <template id="template_canvas_settings">
+        <form class="settings_form">
+          <label>Choose color:
+            <select name="color">
+              <option value="black" selected>black</option>
+              <option value="green">green</option>
+              <option value="blue">blue</option>
+              <option value="yellow">yellow</option>
+              <option value="purple">purple</option>
+              <option value="red">red</option>
+            </select>
+          </label>
+          <input type="button"  value="Save settings" />
+        </form>
+      </template>
+
+      <!-- Template canvas main -->
+      <template id="template_canvas_app">
+        <div class="canvas">
+          <canvas id="myCanvas">
+            Your browser doesn't support canvas
+          </canvas>
+        </div>
+      </template>
+
+    </head>
+    <body>
+      <!-- Main content -->
+      <div id = "main_content" class="main_content">
+        <!-- Launcher -->
+        <div class="launcher_menu">
+          <ul>
+            <li value="Reset">
+              <i class="material-icons md-30 launch_icon">loop</i>
+              <div class="tool_container">
+                <div class="tool_line">
+                  <span class="tool_title">Reset_Desktop</span>
+                </div>
+              </div>
+            </li>
+            <li value="Memory">
+              <i class="material-icons md-30 launch_icon">apps</i>
+              <div class="tool_container">
+                <div class="tool_line">
+                  <span class="tool_title">MemoryApp</span>
+                </div>
+              </div>
+            </li>
+            <li value="Chat">
+            <i class="material-icons md-30 launch_icon">chat</i>
+            <div class="tool_container">
+              <div class="tool_line">
+                <span class="tool_title">ChatApp</span>
+              </div>
+            </div>
+          </li>
+            <li value="Canvas">
+              <i class="material-icons md-30 launch_icon">create</i>
+              <div class="tool_container">
+                <div class="tool_line">
+                  <span class="tool_title">CanvasApp</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script src="javascript/build.js"></script>
+    </body>
+  </html>

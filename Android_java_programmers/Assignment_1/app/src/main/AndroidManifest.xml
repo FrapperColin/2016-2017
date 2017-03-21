@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="a1.assignment_1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainList"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Random"
+            android:configChanges="orientation|screenSize"
+            android:label="Random" />
+        <activity
+            android:name=".BMI"
+            android:configChanges="orientation|screenSize"
+            android:label="BMI" />
+        <activity
+            android:name=".My_countries"
+            android:configChanges="orientation|screenSize"
+            android:label="My_Countries" />
+        />
+        <activity
+            android:name=".Add_country"
+            android:configChanges="orientation|screenSize"
+            android:label="Add_coutry" />
+        />
+        <activity
+            android:name=".VaxjoWeather"
+            android:configChanges="orientation|screenSize"
+            android:label="VaxjoWeather" />
+        />
+        <activity
+            android:name=".BeerPager"
+            android:label="@string/title_activity_beer_pager"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

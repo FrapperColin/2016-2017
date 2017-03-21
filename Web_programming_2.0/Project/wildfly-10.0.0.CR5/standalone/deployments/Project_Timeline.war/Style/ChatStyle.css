@@ -1,0 +1,190 @@
+.chat_off
+{
+  color: red;
+}
+
+.chat_connecting
+{
+  color: orange;
+}
+
+.chat_on
+{
+  color: green;
+}
+
+
+.chat_app
+{
+  width: 400px;
+  height: 450px;
+  border : 2px solid black;
+  background: #ffffff;
+}
+
+.chat_app .window_content {
+  background: rgba(255,255,255,0.95);
+  position: relative;
+}
+
+.chat_app .chat_form {
+  padding-top: 10px;
+  bottom: 3px;
+  height: 45px;
+  width: 100%;
+  background: rgba(255,255,255,0.95);
+}
+
+.settings_form
+{
+
+  background-color:#FAFAFA;
+  padding:10px;
+  width:150px;
+}
+
+
+.settings_form fieldset
+{
+  padding:0 10px 10px 10px;
+  margin-bottom:10px;
+  border:1px solid #DF3F3F;
+
+}
+
+.settings_form label
+{
+  margin-top:10px;
+  display:block;
+}
+
+.settings_form label.inline
+{
+  display:inline;
+  margin-right:50px;
+}
+
+.settings_form input, select, option
+{
+  background-color:#FFF3F3;
+}
+
+.settings_form input, select
+{
+  padding:3px;
+  border:1px solid #F5C5C5;
+  border-radius:5px;
+  width:200px;
+  box-shadow:1px 1px 2px #C0C0C0 inset;
+}
+
+.settings_form select
+{
+  margin-top:10px;
+}
+
+
+.settings_form input[type=submit]
+{
+  width:100px;
+  margin-left:5px;
+  box-shadow:1px 1px 1px #D83F3D;
+  cursor:pointer;
+}
+
+
+.chat_app .chat_form .chat_inputField {
+  resize: none;
+  width: calc(100% - 56px);
+  margin: 2px;
+  height: 37px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: auto;
+  padding: 2px;
+  font-size: 16px;
+}
+
+.chat_app .chat_form .chat_send
+{
+  top: 0;
+  width: 39px;
+  height: 41px;
+  margin: 2px;
+  border-radius: 50%;
+  border: 2px solid #f47023;
+  background-color: #dde6f4;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.chat_app .chat_form .chat_send:disabled
+{
+  border: 2px solid #cccccc;
+  font-weight: normal;
+}
+
+.chat_app .chat_message_list {
+  height: calc(100% - 45px);
+  overflow: auto;
+}
+
+.chat_app .chat_message_list ul {
+  padding-bottom: 5px;
+}
+
+.chat_app .chat_message_list ul li {
+  padding-top: 5px;
+  display: block;
+}
+
+.chat_app .chat_username
+{
+  cursor: default;
+  font-weight: bold;
+  overflow: visible;
+}
+
+.chat_app .chat_bubble_me
+{
+  text-align: right;
+  width: 100%;
+  overflow: visible;
+}
+
+.chat_app .chat_bubble
+{
+  overflow: visible;
+}
+
+.chat_app .chat_message_line
+{
+  display: inline-block;
+  overflow: visible;
+  text-align: left;
+  padding: 5px;
+  max-width: 65%;
+  min-width: 12px;
+  min-height: 15px;
+
+  word-wrap: break-word;
+  border-radius: 8px;
+  margin-left: 3px;
+}
+
+.chat_app .chat_bubble .chat_message_line {
+  background: #7fc2df;
+}
+
+.chat_app .chat_bubble_me .chat_message_line {
+  background: #86e47c;
+}
+
+
+.chat_app .chat_history
+{
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  font-size: 12px;
+}

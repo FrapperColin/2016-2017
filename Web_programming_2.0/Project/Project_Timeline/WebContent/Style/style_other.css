@@ -1,0 +1,285 @@
+
+.window
+{
+	width: 250px;
+	height: 300px;
+	position: absolute;
+	opacity: 1;
+}
+
+.window .window_top
+{
+	width: 100%;
+	height: 30px;
+	background: lightgrey;
+}
+
+.window .window_icon
+{
+	margin-top: 3px;
+}
+
+.window .window_title
+{
+	line-height: 30px;
+	position: absolute;
+	top: 3px;
+}
+
+.window .window_menu
+{
+	width: 100%;
+	height: 20px;
+	background : #dde4f4;
+	border-bottom: 1px solid black;
+}
+
+.window .window_menu a
+{
+	cursor: pointer;
+	font-size: 12px;
+	padding: 5px;
+}
+
+.window .window_menu a:hover
+{
+	background: #1979CA;
+	color: #FFFFFF;
+}
+
+.window .window_content
+{
+	position: relative;
+	background: black;
+}
+
+.window .settings_wrapper
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+	z-index: 999;
+}
+
+.window .settings
+{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+
+.window .window_buttons
+{
+	float: right;
+	opacity: 0.7;
+}
+
+*:focus
+{
+	outline: none;
+}
+
+.window:focus
+{
+	z-index: 999;
+}
+
+.window:focus .window_top, .focused_window .window_top
+{
+	background: #d0e1f8;
+}
+
+.window:focus .window_buttons
+{
+	opacity: 1;
+}
+
+.button
+{
+	float: right;
+	width: 45px;
+	height: 30px;
+	text-align: center;
+	color: #000000;
+	padding-top: 5px;
+}
+
+.exit_button:hover
+{
+	background: red;
+	transition: all 0.5s;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+
+.minimize_button:hover
+{
+	background: #e5e5e5;
+	transition: background 0.5s;
+	cursor: pointer;
+	color: #000000;
+}
+
+.exit_cross, .minimize_icon
+{
+	pointer-events: none;
+}
+
+.minimize_icon
+{
+	margin-top: 15px;
+}
+
+.moving
+{
+	opacity: 0.6;
+	cursor: move;
+}
+
+.minimized
+{
+	opacity: 0 !important;
+}
+
+
+.launcher_menu li
+{
+  height: 40px;
+  width: 50px;
+  color: #ffffff;
+  overflow: visible;
+}
+
+.launcher_menu li i
+{
+  padding-top: 5px;
+}
+
+.launcher_menu li:hover
+{
+  cursor: pointer;
+  background: black;
+  transition: all 0.5s;
+}
+
+.launcher_menu li:hover .launch_icon
+{
+  color: #f47023;
+}
+
+.tool_container
+{
+	overflow: hidden;
+	position: absolute;
+	bottom: 40px;
+	padding-bottom: 5px;
+}
+
+.tooltip_close
+{
+	display: none;
+}
+
+
+
+
+.tooltip, .tool_title, .tooltip_close
+{
+	display: none;
+	padding: 5px;
+	z-index: 1000;
+	color : white;
+}
+
+.no-pointer
+{
+	pointer-events: none;
+}
+
+.tool_line
+{
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+}
+
+.tool_title
+{
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.tooltip_close
+{
+	margin-left: 0;
+	height: 20px;
+	overflow: hidden;
+	border-left: 1px solid rgba(255,255,255,0.3);
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.tooltip_close:hover
+{
+	background: rgba(232,17,35,0.8);
+}
+
+.tooltip_title:hover
+{
+	cursor: default;
+}
+
+.tooltip:hover
+{
+	background: grey;
+}
+
+
+.tooltip_line::after
+{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.material-icons.md-12
+{
+	font-size: 12px;
+}
+.material-icons.md-13
+{
+	font-size: 13px;
+}
+.material-icons.md-16
+{
+	font-size: 16px;
+}
+.material-icons.md-18
+{
+	font-size: 18px;
+}
+.material-icons.md-24
+{
+	font-size: 24px;
+}
+.material-icons.md-30
+{
+	font-size: 30px;
+}
+
+.float_right
+{
+	float: right;
+}
+
+.float_left
+{
+	float: left;
+}
+
+.hide 
+{
+	display: none;
+}

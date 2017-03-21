@@ -1,0 +1,306 @@
+*,
+*::before,
+*::after 
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body 
+{
+	font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+	color: #fff;
+	overflow-x: hidden;
+}
+
+body,
+html
+{
+	height: 100%;
+}
+
+
+.wide 
+{
+	width:100%;
+	height:100%;
+	height:calc(100% - 1px);
+	background-size:cover;
+}
+
+.wide img 
+{
+	width:100%;
+}
+
+.logo 
+{
+	color:#fff;
+	font-weight:800;
+	font-size:14pt;
+	padding:25px;
+	text-align:center;
+	padding-top: 100px;
+}
+
+.line 
+{
+	padding-top:100px;
+	white-space:no-wrap;
+	overflow:hidden;
+	text-align:center;
+}
+
+
+
+
+/* INTRO SECTION */
+
+.intro 
+{
+	background: #808080 ;
+	padding: 100px 0;
+}
+
+.container 
+{
+	float : left ;
+	width: 30%;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 
+{
+	font-size: 2.5rem;
+}
+
+
+/* TIMELINE */
+
+.timeline ul 
+{
+	padding: 50px 0;
+}
+
+.timeline ul li 
+{
+	list-style-type: none;
+	position: relative;
+	width: 6px;
+	margin: 0 auto;
+	padding-top: 50px;
+	background: #fff;
+}
+
+.timeline ul li::after 
+{
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: inherit;
+}
+
+.timeline ul li div 
+{
+	position: relative;
+	bottom: 0;
+	width: 320px;
+	padding: 15px;
+	background: #000;
+}
+
+.timeline ul li div a 
+{
+	margin-top: 20px ;
+}
+
+.timeline ul li div::before 
+{
+	content: '';
+	position: absolute;
+	bottom: 7px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div 
+{
+	left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before 
+{
+	left: -15px;
+	border-width: 8px 16px 8px 0;
+	border-color: transparent #000 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div 
+{
+	left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before 
+{
+	right: -15px;
+	border-width: 8px 0 8px 16px;
+	border-color: transparent transparent transparent #000;
+}
+
+time 
+{
+	display: block;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+
+/* EFFECTS */
+
+.timeline ul li::after 
+{
+	transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after 
+{
+	background: #000;
+}
+
+.timeline ul li div 
+{
+	visibility: hidden;
+	opacity: 0;
+	transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div 
+{
+	transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div 
+{
+	transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div 
+{
+	transform: none;
+	visibility: visible;
+	opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES */
+
+@media screen and (max-width: 900px) 
+{
+	.timeline ul li div 
+	{
+		width: 250px;
+	}
+	.timeline ul li:nth-child(even) div 
+	{
+	  left: -289px;
+	}
+}
+
+@media screen and (max-width: 600px) 
+{
+	.timeline ul li 
+	{
+		margin-left: 20px;
+	}
+	.timeline ul li div 
+	{
+		width: calc(100vw - 91px);
+	}
+	.timeline ul li:nth-child(even) div 
+	{
+		left: 45px;
+	}
+	.timeline ul li:nth-child(even) div::before 
+	{
+		left: -15px;
+		border-width: 8px 16px 8px 0;
+		border-color: transparent #F45B69 transparent transparent;
+	}
+}
+
+/* FOOTER */
+
+
+.footer-basic-centered
+{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font: normal 18px sans-serif;
+	padding: 45px;
+}
+
+.footer-basic-centered .footer-company-motto
+{
+	color:  #8d9093;
+	font-size: 24px;
+}
+
+.footer-basic-centered .footer-company-name
+{
+	color:  #8f9296;
+	font-size: 14px;
+}
+
+.footer-basic-centered .footer-links
+{
+	list-style: none;
+	font-weight: bold;
+	color:  #ffffff;
+	padding: 35px 0 23px;
+}	
+
+.footer-basic-centered .footer-links a
+{
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+
+@media (max-width: 600px) 
+{
+	.footer-basic-centered
+	{
+		padding: 35px;
+	}
+	.footer-basic-centered .footer-company-motto
+	{
+		font-size: 18px;
+	}
+	.footer-basic-centered .footer-company-name
+	{
+		font-size: 12px;
+	}
+	.footer-basic-centered .footer-links
+	{
+		font-size: 14px;
+		padding: 25px 0 20px;
+	}
+	.footer-basic-centered .footer-links a
+	{
+		line-height: 1.8;
+	}
+}

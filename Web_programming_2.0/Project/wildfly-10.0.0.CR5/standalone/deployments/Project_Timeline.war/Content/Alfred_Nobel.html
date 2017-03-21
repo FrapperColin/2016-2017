@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alfred Nobel</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="../Style/style_page.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href="../Style/style_other.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../Style/ChatStyle.css"/>
+
+	<!-- Template window -->
+		<template id="template_window">
+			<!-- window -->
+			<div class="window">
+			  	<!-- windows top -->
+				<div class="window_top">
+			  		<i class="material-icons md-24 window_icon "></i><span class="window_title"></span><span class="window-title-extra no-pointer"></span>
+			  		<!-- windows button -->
+			  		<div class="window_buttons">
+					    <span class="minimize_button" title="Minimize"><span class="minimize_icon"><i class="material-icons md-18">remove</i></span></span>
+					    <span class="exit_button" title="Close"><span class="exit_cross"><i class="material-icons md-18">close</i></span></span>
+			  		</div>
+				</div>
+				<!-- window menu (settings) -->
+				<div class="window_menu"></div>
+				<!-- window content -->
+		    	<div class="window_content"></div>
+	  		</div>
+		</template>
+		
+		
+		<!-- Template tooltip -->
+		<template id="template_tooltip">
+			<!-- tool tip menu -->
+			<div class="tool_line">
+				<span class="tooltip float_left"></span>
+				<i class="material-icons md-16 float_right tooltip_close" title="Close">close</i>
+			</div>
+		</template>
+		
+		<!-- Template menu memory -->
+		<template id="template_menu">
+			<a class="menu"></a>
+		</template>
+		
+		<!-- Template settings -->
+		<template id="template_settings">
+		<div class="settings_wrapper">
+			<div class="settings">
+			</div>
+		</div>
+		</template>
+		
+		<!-- Template chat setting -->
+		<template id="template_chat_settings">
+			<form class="settings_form">
+				<fieldset>
+					<label>Username: <input type="text" name="username" placeholder="Enter Username">
+					</label><br>
+					<label>Server: <input type="text" name="server">
+					</label><br>
+					<label>Channel: <input type="text" name="channel" placeholder="optional">
+					</label><br>
+					<label><input type="button" value="Connect" /></label>
+				</fieldset>
+			</form>
+		</template>
+		
+		<!-- Template chat app -->
+		<template id="template_chat_app">
+			<div class="chat_message_list">
+				<ul>
+				</ul>
+			</div>
+			<div class="chat_form">
+				<form>
+				  <textarea class="chat_inputField" title="Message"></textarea>
+				  <input class="chat_send" title="Send" type="button" value="Send" disabled="disabled">
+				</form>
+			</div>
+		</template>
+		
+		<!-- Template Chat message -->
+		<template id="template_chat_message">
+			<li>
+				<div class="chat_message_line">
+					<span class="chat_username"></span><span class="chat_message"></span>
+				</div>
+			</li>
+		</template>
+		
+		<!-- Template History -->
+		<template id="template_chat_history">
+			<div class="chat_history">
+				<i class="material-icons md-12">history</i> History <i class="material-icons md-12">keyboard_arrow_up</i>
+			</div>
+		</template>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+
+  <div class="container-fluid">
+
+    <header >
+
+    <!-- Navigation
+    ================================================== -->
+    <nav class="navbar navbar-inverse" role="navigation" data-spy="affix">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.jsp"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+        <a class="navbar-brand" href="#">Alfred Nobel</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li> <a href="#about">About</a> </li>
+          <li> <a href="#quotes">Quotes</a> </li>
+          <li> <a href="#add">Add</a> </li>
+        </ul>
+      </div>
+    </nav>
+
+    </header>
+
+    <!-- Caroussel
+    ================================================== -->
+ 
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="../Images/Alfred_Nobel/Alfred_Nobel.jpg" alt="Alfred Nobel">
+    </div>
+
+    <div class="item">
+      <img src="../Images/Alfred_Nobel/Alfred_Nobel_2.jpg" alt="Alfred Nobel">
+    </div>
+
+    <div class="item">
+      <img src="../Images/Alfred_Nobel/Alfred_Nobel_3.jpg" alt="Alfred Nobel">
+    </div>
+
+    <div class="item">
+      <img src="../Images/Alfred_Nobel/Alfred_Nobel_4.jpg" alt="Alfred Nobel">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+	<div id ="about">
+	</div>
+
+    <section class="row jumbotron" >
+        <div class="col-md-12">
+          <h1 class="text-center">Presentation</h1>
+        </div>
+        <div class="col-md-12">
+          <p>Alfred Bernhard Nobel (21 October 1833 – 10 December 1896) was a Swedish chemist, engineer, inventor, businessman, and philanthropist.
+          Known for inventing dynamite, Nobel also owned Bofors, which he had redirected from its previous role as primarily an iron and steel producer to a major manufacturer of cannon and other armaments. Nobel held 355 different patents, dynamite being the most famous. After reading a premature obituary which condemned him for profiting from the sales of arms, he bequeathed his fortune to institute the Nobel Prizes. The synthetic element nobelium was named after him. His name also survives in modern-day companies such as Dynamit Nobel and AkzoNobel, which are descendants of mergers with companies Nobel himself established.
+          <br/>
+          </p>
+          <h1 class="text-center">Nobel Prize</h1>
+          <p>
+          On 27 November 1895, at the Swedish-Norwegian Club in Paris, Nobel signed his last will and testament and set aside the bulk of his estate to establish the Nobel Prizes, to be awarded annually without distinction of nationality. After taxes and bequests to individuals, Nobel's will allocated 94% of his total assets, 31,225,000 Swedish kronor, to establish the five Nobel Prizes. This converted to £1,687,837 (GBP) at the time. In 2012, the capital was worth around SEK 3.1 billion (USD 472 million, EUR 337 million), which is almost twice the amount of the initial capital, taking inflation into account.
+          <br/> 
+          The first three of these prizes are awarded for eminence in physical science, in chemistry and in medical science or physiology; the fourth is for literary work "in an ideal direction" and the fifth prize is to be given to the person or society that renders the greatest service to the cause of international fraternity, in the suppression or reduction of standing armies, or in the establishment or furtherance of peace congresses.
+          <br/>
+          </p>
+     	    <h1 class="text-center">Criticism</h1>
+          <p>
+            Criticism of Nobel focuses on his leading role in weapons manufacturing and sales, and some question his motives in creating his prizes, suggesting they were intended to improve his reputation.
+          </p>
+        </div>
+    </section>
+
+	<div id ="quotes">
+	</div>
+
+    <section class="row jumbotron" >
+        <div class="col-md-12">
+          <h1 class="text-center">The famous quotes of Alfred Nobel</h1>
+        </div>
+        <div class="col-md-4">
+          <p>
+              "My dynamite will sooner lead to peace than a thousand world conventions. As soon as men will find that in one instant, whole armies can be utterly destroyed, they surely will abide by golden peace. "
+          </p>
+        </div>
+        <div class="col-md-4">
+          <p>
+            "If I have a thousand ideas and only one turns out to be good, I am satisfied. "
+            <br />
+            <br />
+            "Home Is Where I Work, And I Work Everywhere."
+
+          </p>
+        </div>
+        
+         <div class="col-md-4">
+          <p>
+              "Lying Is The Greatest Of All Sins."
+              <br />
+              <br />
+              "Good Wishes Alone Will Not Ensure Peace."
+              <br />
+              <br />
+              "I Intend To Leave After My Death A Large Fund For The Promotion Of The Peace Idea, But I Am Skeptical As To Its Results."
+          </p>
+        </div>
+        
+    </section>
+
+	<div id ="add">
+	</div>
+    <section class="row jumbotron" >
+        <div class="col-md-12">
+          <h1 class="text-center">Wanna add something ? </h1>
+          <div id = "main_content" class="main_content">
+		    
+		    <div class="launcher_menu">
+          	<ul>
+				<li value="Chat">
+					<i class="material-icons md-30 launch_icon">chat</i>
+					<div class="tool_container">
+				  		<div class="tool_line">
+				    		<span class="tool_title">ChatApp</span>
+				  		</div>
+					</div>
+	     		</li>
+	     	</ul>
+	     	</div>	
+	  		</div> 
+        </div>
+        
+
+
+    </section>
+
+    
+
+    </div>
+
+    <footer class="footer-basic-centered">
+      <p class="footer-company-motto">Timeline nobel prizes.</p>
+      <p class="footer-links">
+        <a href="../index.jsp">Home</a>
+        ·
+        <a href="#">Source</a>
+        ·
+        <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">Colin Frapper &copy; 2017</p>
+
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Javascript de Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script src="../Js/page.js" type="text/javascript"></script>
+    <script src="../Js/app.js" type="text/javascript"></script>
+    
+
+  </body>
+
+</html>

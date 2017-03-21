@@ -1,0 +1,34 @@
+                            
+/* TEAM */
+                  
+Name : FRAPPER Colin 
+                          
+Site: https://1dv525.github.io/cf222jb-examination-1/Files/index.html
+                            
+Location: Växjö, Sweden.
+
+
+/* SITE */
+
+About : Examination 1 - Introdution to web programming - Linnaeus University
+
+First start : 2016/09/01
+
+Last update:  2016/09/11
+       
+Standards: HTML5, CSS3.
+
+Realised on : Sublime Text, Mozilla Firefox
+
+/* SOURCE */
+
+Site HTML : https://developer.mozilla.org/en-US/docs/Web/HTML
+			https://rawgit.com/CS-LNU-Learning-Objects/html/master/lectures/01/index.html#/
+
+Site CSS :  https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+			https://rawgit.com/CS-LNU-Learning-Objects/css/master/lectures/01/index.html#/
+			https://www.w3.org/wiki/The_web_standards_model_-_HTML_CSS_and_JavaScript#Why_separate.3F
+
+Site about robot.txt : https://www.elegantthemes.com/blog/tips-tricks/how-to-create-and-configure-your-robots-txt-file
+
+Site about human.txt : http://humanstxt.org/

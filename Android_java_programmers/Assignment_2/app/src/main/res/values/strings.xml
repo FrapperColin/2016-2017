@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- GENERAL STRINGS-->
+    <string name="app_name">Assignment 2</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu">MainList</string>
+
+    <!-- ALARM CLOCK -->
+    <string name="title_alarm_clock">Alarm Clock</string>
+    <string name="title_add_alarm">Add Alarm</string>
+    <string name="title_edit_alarm">Edit Alarm</string>
+    <string name="title_dialog_alarm">Dialog Alarm</string>
+    <string name="setAlarm">Set Alarm</string>
+    <string name="empty">There is no alarms set. Press new alarm to set alarm</string>
+    <string name="new_alarm">New alarm</string>
+    <string name="between_time">:</string>
+    <string name="later_alarm">Wait 5 minutes</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="activate">Activate Alarm</string>
+    <string name="desactivate">Deactivate Alarm</string>
+    <string name="alarm">Alarm</string>
+    <string name="morning">WAKE UP</string>
+    <string name="Note">Note : if you want delete, update or desactive alarm press the alarm for a short time</string>
+
+    <!-- MyCountries -->
+    <string name="add">Menu</string>
+    <string name="add_country">Add Country</string>
+    <string name="update_country">Update Country</string>
+    <string name="title_my_countries">My Countries</string>
+    <string name="hint_year">Enter Year</string>
+    <string name="hint_country">Enter Country</string>
+    <string name="done">Send</string>
+    <string name="space"> - </string>
+
+
+    <!-- Preferences -->
+    <string name="settings">Settings</string>
+    <string name="title_activity_preferences">Preferences</string>
+    <string name="title_activity_preference_fragment">PreferenceFragment</string>
+    <string name="prefs_back_color_key">Background color</string>
+    <string name="prefs_text_color_key">Text color</string>
+    <string name="pres_text_size_key">Text size</string>
+
+    <!-- Media Player -->
+    <string name="activity_media_player">Media Player</string>
+    <string name="no_music">No music found on Sd Card</string>
+    <string name="back_button">Button Previous Song</string>
+    <string name="play_button">Button Play Song</string>
+    <string name="pause_button">Button Pause Song</string>
+    <string name="next_button">Button Next Song</string>
+    <string name="media_menu">Menu</string>
+    <string name="exit_music_app">Exit</string>
+    <string name="dialog_exit">Do you really want to exit the application ?</string>
+
+</resources>

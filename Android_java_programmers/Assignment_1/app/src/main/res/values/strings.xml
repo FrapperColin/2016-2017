@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    // RANDOM
+    <string name="Number">100</string>
+    <string name="button_random">New random</string>
+
+    // BMI
+    <string name="BMI_Calculator">BMI_Calculator</string>
+    <string name="lenght_BMI">Length : </string>
+    <string name="centimetres">In centimeters</string>
+    <string name="weight_BMI">Weight : </string>
+    <string name="kilogramme">In kilogramme </string>
+    <string name="button1_BMI">Compute : </string>
+    <string name="button2_BMI">Reset : </string>
+
+
+    // Country
+
+    <string name="add_country"> Add Country</string>
+    <string name="country"> Country :</string>
+    <string name="year_country"> Year :</string>
+    <string name="button_send"> Send </string>
+
+    // VaxjoWeather
+    <string name="settings"> Settings </string>
+    <string name="temperature"> Temperature : </string>
+    <string name="wind"> Wind : </string>
+
+
+    <string name="Internet"> There is no internet </string>
+    <string name="title_activity_beer_pager">BeerPager</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+</resources>

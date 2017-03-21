@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/add_layout"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:fadingEdge="horizontal"
+              android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Text_update_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="40dp"
+        android:text="@string/update_country"
+        android:textSize="25sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/Text_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:text="@string/hint_country"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/edit_country"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/Text_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:text="@string/hint_year"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/edit_year"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center">
+    </EditText>
+
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="158dp"
+        android:layout_height="51dp"
+        android:longClickable="true"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="@string/done" />
+</LinearLayout>
+

@@ -1,0 +1,20 @@
+.canvas_app
+{
+  background: #ffffff;
+  width : 400px ;
+  height : 300px;
+}
+
+.canvas_app .window_content
+{
+  background: #ffffff;
+
+}
+#myCanvas
+{
+  background: #ffffff;
+  width : 400px ;
+  height : 300px;
+}
+
+

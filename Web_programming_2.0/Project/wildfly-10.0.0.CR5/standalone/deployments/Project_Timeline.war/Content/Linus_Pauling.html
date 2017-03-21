@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Linus Pauling</title>
+		<!-- Style for boostrap -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<!-- Style for this page -->
+		<link href="../Style/style_other.css" rel="stylesheet"/>
+		<!-- Style for the websocket chat -->
+		<link rel="stylesheet" type="text/css" href="../Style/ChatStyle.css"/>
+	
+	
+		<link href="../Style/style_page.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="../Style/ChatStyle.css"/>
+		<!-- Template window -->
+		<template id="template_window">
+			<!-- window -->
+			<div class="window">
+			  	<!-- windows top -->
+				<div class="window_top">
+			  		<i class="material-icons md-24 window_icon "></i><span class="window_title"></span><span class="window-title-extra no-pointer"></span>
+			  		<!-- windows button -->
+			  		<div class="window_buttons">
+					    <span class="minimize_button" title="Minimize"><span class="minimize_icon"><i class="material-icons md-18">remove</i></span></span>
+					    <span class="exit_button" title="Close"><span class="exit_cross"><i class="material-icons md-18">close</i></span></span>
+			  		</div>
+				</div>
+				<!-- window menu (settings) -->
+				<div class="window_menu"></div>
+				<!-- window content -->
+		    	<div class="window_content"></div>
+	  		</div>
+		</template>
+		
+		
+		<!-- Template tooltip -->
+		<template id="template_tooltip">
+			<!-- tool tip menu -->
+			<div class="tool_line">
+				<span class="tooltip float_left"></span>
+				<i class="material-icons md-16 float_right tooltip_close" title="Close">close</i>
+			</div>
+		</template>
+		
+		<!-- Template menu memory -->
+		<template id="template_menu">
+			<a class="menu"></a>
+		</template>
+		
+		<!-- Template settings -->
+		<template id="template_settings">
+		<div class="settings_wrapper">
+			<div class="settings">
+			</div>
+		</div>
+		</template>
+		
+		<!-- Template chat setting -->
+		<template id="template_chat_settings">
+			<form class="settings_form">
+				<fieldset>
+					<label>Username: <input type="text" name="username" placeholder="Enter Username">
+					</label><br>
+					<label>Server: <input type="text" name="server">
+					</label><br>
+					<label>Channel: <input type="text" name="channel" placeholder="optional">
+					</label><br>
+					<label><input type="button" value="Connect" /></label>
+				</fieldset>
+			</form>
+		</template>
+		
+		<!-- Template chat app -->
+		<template id="template_chat_app">
+			<div class="chat_message_list">
+				<ul>
+				</ul>
+			</div>
+			<div class="chat_form">
+				<form>
+				  <textarea class="chat_inputField" title="Message"></textarea>
+				  <input class="chat_send" title="Send" type="button" value="Send" disabled="disabled">
+				</form>
+			</div>
+		</template>
+		
+		<!-- Template Chat message -->
+		<template id="template_chat_message">
+			<li>
+				<div class="chat_message_line">
+					<span class="chat_username"></span><span class="chat_message"></span>
+				</div>
+			</li>
+		</template>
+		
+		<!-- Template History -->
+		<template id="template_chat_history">
+			<div class="chat_history">
+				<i class="material-icons md-12">history</i> History <i class="material-icons md-12">keyboard_arrow_up</i>
+			</div>
+		</template>
+		
+	</head>
+
+	<body data-spy="scroll" data-target=".navbar">
+	 		
+		<div class="container-fluid">
+		
+			<header>
+		 		<nav class="navbar navbar-inverse" role="navigation" data-spy="affix">
+		   			<div class="navbar-header">
+		     			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			       			<span class="icon-bar"></span>
+			       			<span class="icon-bar"></span>
+		       				<span class="icon-bar"></span>
+		     			</button>
+						<a class="navbar-brand" href="../index.jsp"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+						<a class="navbar-brand" href="#">Linus Pauling</a>
+		   			</div>
+		   			<div class="collapse navbar-collapse">
+			      		<ul class="nav navbar-nav">
+					        <li> <a href="#about">About</a> </li>
+					        <li> <a href="#quotes">Quotes</a> </li>
+					        <li> <a href="#add" >Add</a> </li>
+			      		</ul>
+		     		</div>
+				</nav>
+			</header>
+		</div>
+		
+		<!-- Caroussel -->
+		
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
+		
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="../Images/Linus_Pauling/Linus_Pauling1.jpg" alt="Linus Pauling">
+				</div>
+			
+				<div class="item">
+					<img src="../Images/Linus_Pauling/Linus_Pauling2.jpg" alt="Linus Pauling">
+				</div>
+				
+				<div class="item">
+					<img src="../Images/Linus_Pauling/Linus_Pauling3.jpg" alt="Linus Pauling">
+				</div>
+				
+				<div class="item">
+					<img src="../Images/Linus_Pauling/Linus_Pauling4.jpg" alt="Linus Pauling">
+				</div>
+			</div>
+			
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		
+		<div id ="about">
+		</div>
+		   
+	   <section class="row jumbotron" >
+	        <div class="col-md-12">
+				<h1 class="text-center">Presentation</h1>
+	       	</div>
+	       	<div class="col-md-12">
+	         	<p>Linus Carl Pauling (February 28, 1901 – August 19, 1994) was an American chemist, biochemist, 
+	         	peace activist, author, and educator. He published more than 1,200 papers and books, of which about 850 dealt 
+	         	with scientific topics. New Scientist called him one of the 20 greatest scientists of all time, and as 
+	         	of 2000, he was rated the 16th most important scientist in history. Pauling was one of the founders of the 
+	         	fields of quantum chemistry and molecular biology.
+	         	</p>
+	       	</div>
+	       	<div class="col-md-12">
+	          <h1 class="text-center">Nobel Prize</h1>
+	          <p>
+	          In 1962, he was awarded the Nobel Peace Prize for his activism against weapons of mass destruction and the 
+	          nuclear arms race. He was also known as a proponent of megavitiamin therapy and using Vitamin C to 
+	          help cure cancer.
+	          <br />
+	          In 1954, he was one of the few people to receive two Nobel Prizes, 
+	          Linus Pauling's first prize was for his research on chemical bonds and their role in complex substances, 
+	          as well as the nature of ionic and covalent bonds.
+	          </p>
+	        </div>
+	   </section>
+		
+		<div id ="quotes">
+		</div>
+		
+	   	<section class="row jumbotron" >
+			<div class="col-md-12">
+				<h1 class="text-center">The famous quotes of Linus Pauling</h1>
+    		</div>
+    		<div class="col-md-4">
+	      		<p>
+	           		“The best way to have a good idea is to have a lot of ideas.” 
+	           		<br />
+	           		<br />
+	           		“Facts are the air of scientists. Without them you can never fly.” 
+	      		</p>
+    		</div>
+    		<div class="col-md-4">
+				<p>
+					“You can trace every sickness, every disease and every ailment to a mineral deficiency.” 
+					<br />
+					<br />
+					“Optimum nutrition is the medicine of tomorrow.” 
+					<br />
+					<br />
+					“Life is a relationship among molecules and not a property of any molecule.”
+	         	</p>
+	       	</div>
+	       
+	        <div class="col-md-4">
+				<p>
+					“Satisfaction of one's curiosity is one of the greatest sources of happiness in life.” 
+					<br />
+					<br />
+					“Nations keep agreements, keep their treaties so long as they continue to do them good.”         
+	         	</p>
+	       </div>
+	       
+	   	</section>
+		
+		<div id ="add">
+		</div>
+		<section class="row jumbotron" >
+			<div class="col-md-12">
+				<h1 class="text-center">Wanna add something ? </h1>
+		    
+		    <div id = "main_content" class="main_content">
+		    
+		    <div class="launcher_menu">
+          	<ul>
+				<li value="Chat">
+					<i class="material-icons md-30 launch_icon">chat</i>
+					<div class="tool_container">
+				  		<div class="tool_line">
+				    		<span class="tool_title">ChatApp</span>
+				  		</div>
+					</div>
+	     		</li>
+	     	</ul>
+	     	</div>	
+	  		</div> 
+	  		</div>      
+		</section>
+			   
+		
+	<footer class="footer-basic-centered">
+		<p class="footer-company-motto">Timeline nobel prizes.</p>
+		<p class="footer-links">
+			<a href="../index.jsp">Home</a>
+		  	·
+		  	<a href="#">Source</a>
+		  	·
+		  	<a href="#">Contact</a>
+		  
+		</p>
+		
+		<p class="footer-company-name">Colin Frapper &copy; 2017</p>
+
+   	</footer>
+		
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<!-- Javascript de Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="../Js/page.js" type="text/javascript"></script>
+	<script src="../Js/app.js" type="text/javascript"></script>
+	  
+	</body>
+
+</html>

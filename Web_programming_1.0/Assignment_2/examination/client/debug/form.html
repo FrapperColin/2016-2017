@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="stylesheet/style.css" /> <!-- Link CSS -->
+    <title> Quiz application </title> <!--Title -->
+
+    <meta property="og:title" content="Form" />
+    <meta property="og:type" content="Form" />
+    <meta property="og:url" content="./form.html" />
+    <meta property="og:image" content="./image/favicon.png" />
+
+    <!-- Template to display the question and response it -->
+    <template id="template_question">
+      <div class="timer">
+        <p> </p>
+      </div>
+        <h4 class="questionHead"></h4>
+        <form class="questionForm">
+          <label>Answer :
+            <input type="text" id="answer"/></label>
+          <input type="button" class="submit" value="Send" />
+        </form>
+    </template>
+
+    <!-- Template to display the question with alternatives and response it -->
+    <template id="template_question_alt">
+      <div class="timer">
+        <p> </p>
+      </div>
+        <h4 class="questionHead"></h4>
+        <form class="questionForm">
+          <input type="button" class="submit" value="Send" />
+        </form>
+    </template>
+
+    <!-- Template to display the question with alternatives and response it -->
+    <template id="template_alternative">
+      <div class="alternativeRow">
+        <input type="radio" name="alternative" />
+        <label class="radio_label"></label>
+      </div>
+    </template>
+
+    <!-- Display correct answer or wrong answer -->
+    <template id="template_answer">
+        <p></p>
+    </template>
+
+    <!-- Template when you completed the quiz -->
+    <template id="template_quiz_end">
+      <div>
+        <h4></h4>
+        <h4 class="show_score">You finished the game in <strong class="time"></strong> seconds</h4>
+        <h4 class="hs_title">Highscore : </h4>
+        <table>
+        </table>
+        <p class="newGame"><a href="?">New Game</a></p>
+      </div>
+    </template>
+
+    <!-- Template to displat highScore-->
+    <template id="template_highscore_row">
+      <tr>
+        <td class="hs_username"></td>
+        <td class="hs_score"></td>
+      </tr>
+    </template>
+  </head>
+
+<body>
+  <header>
+    <h1> Quizz application </h1>
+  </header>
+  <nav> <!-- Menu -->
+    <ul>
+      <li><a href="index.html">Index</a></li>
+    </ul>
+  </nav>
+
+  <div id="context">
+    <form id="formUsername">
+      <label>Username :
+        <input type="text" id="username" autofocus /></label>
+      <br />
+      <input type="button" id="submitUsername" value="Start !"  />
+    </form>
+  </div>
+
+  <footer>
+    <p>Posted by: Colin Frapper <br/>
+      Contact information: <a href="mailto:colin.frapper@gmail.com"> colin.frapper@gmail.com</a>.<br />
+      <strong> Note </strong> : Sorry about my english.
+    </p>
+  </footer>
+
+<script src="javascript/build.js"></script>
+</body>
+</html>

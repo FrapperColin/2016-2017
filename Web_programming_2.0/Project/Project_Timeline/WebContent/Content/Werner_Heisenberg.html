@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Werner Heisenberg</title>
+		<!-- Style for boostrap -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<!-- Style for this page -->
+		<link href="../Style/style_other.css" rel="stylesheet"/>
+		<!-- Style for the websocket chat -->
+		<link rel="stylesheet" type="text/css" href="../Style/ChatStyle.css"/>
+	
+	
+		<link href="../Style/style_page.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="../Style/ChatStyle.css"/>
+		<!-- Template window -->
+		<template id="template_window">
+			<!-- window -->
+			<div class="window">
+			  	<!-- windows top -->
+				<div class="window_top">
+			  		<i class="material-icons md-24 window_icon "></i><span class="window_title"></span><span class="window-title-extra no-pointer"></span>
+			  		<!-- windows button -->
+			  		<div class="window_buttons">
+					    <span class="minimize_button" title="Minimize"><span class="minimize_icon"><i class="material-icons md-18">remove</i></span></span>
+					    <span class="exit_button" title="Close"><span class="exit_cross"><i class="material-icons md-18">close</i></span></span>
+			  		</div>
+				</div>
+				<!-- window menu (settings) -->
+				<div class="window_menu"></div>
+				<!-- window content -->
+		    	<div class="window_content"></div>
+	  		</div>
+		</template>
+		
+		
+		<!-- Template tooltip -->
+		<template id="template_tooltip">
+			<!-- tool tip menu -->
+			<div class="tool_line">
+				<span class="tooltip float_left"></span>
+				<i class="material-icons md-16 float_right tooltip_close" title="Close">close</i>
+			</div>
+		</template>
+		
+		<!-- Template menu memory -->
+		<template id="template_menu">
+			<a class="menu"></a>
+		</template>
+		
+		<!-- Template settings -->
+		<template id="template_settings">
+		<div class="settings_wrapper">
+			<div class="settings">
+			</div>
+		</div>
+		</template>
+		
+		<!-- Template chat setting -->
+		<template id="template_chat_settings">
+			<form class="settings_form">
+				<fieldset>
+					<label>Username: <input type="text" name="username" placeholder="Enter Username">
+					</label><br>
+					<label>Server: <input type="text" name="server">
+					</label><br>
+					<label>Channel: <input type="text" name="channel" placeholder="optional">
+					</label><br>
+					<label><input type="button" value="Connect" /></label>
+				</fieldset>
+			</form>
+		</template>
+		
+		<!-- Template chat app -->
+		<template id="template_chat_app">
+			<div class="chat_message_list">
+				<ul>
+				</ul>
+			</div>
+			<div class="chat_form">
+				<form>
+				  <textarea class="chat_inputField" title="Message"></textarea>
+				  <input class="chat_send" title="Send" type="button" value="Send" disabled="disabled">
+				</form>
+			</div>
+		</template>
+		
+		<!-- Template Chat message -->
+		<template id="template_chat_message">
+			<li>
+				<div class="chat_message_line">
+					<span class="chat_username"></span><span class="chat_message"></span>
+				</div>
+			</li>
+		</template>
+		
+		<!-- Template History -->
+		<template id="template_chat_history">
+			<div class="chat_history">
+				<i class="material-icons md-12">history</i> History <i class="material-icons md-12">keyboard_arrow_up</i>
+			</div>
+		</template>
+		
+	</head>
+
+	<body data-spy="scroll" data-target=".navbar">
+	 		
+		<div class="container-fluid">
+		
+			<header>
+		 		<nav class="navbar navbar-inverse" role="navigation" data-spy="affix">
+		   			<div class="navbar-header">
+		     			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			       			<span class="icon-bar"></span>
+			       			<span class="icon-bar"></span>
+		       				<span class="icon-bar"></span>
+		     			</button>
+						<a class="navbar-brand" href="../index.jsp"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+						<a class="navbar-brand" href="#">Werner Heisenberg</a>
+		   			</div>
+		   			<div class="collapse navbar-collapse">
+			      		<ul class="nav navbar-nav">
+					        <li> <a href="#about">About</a> </li>
+					        <li> <a href="#quotes">Quotes</a> </li>
+					        <li> <a href="#add" >Add</a> </li>
+			      		</ul>
+		     		</div>
+				</nav>
+			</header>
+		</div>
+		
+		<!-- Caroussel -->
+		
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
+		
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="../Images/Werner_Heisenberg/Werner_Heisenberg1.jpg" alt="Werner Heisenberg">
+				</div>
+			
+				<div class="item">
+					<img src="../Images/Werner_Heisenberg/Werner_Heisenberg2.jpg" alt="Werner Heisenberg">
+				</div>
+				
+				<div class="item">
+					<img src="../Images/Werner_Heisenberg/Werner_Heisenberg3.jpg" alt="Werner Heisenberg">
+				</div>
+				
+				<div class="item">
+					<img src="../Images/Werner_Heisenberg/Werner_Heisenberg4.jpg" alt="Werner Heisenberg">
+				</div>
+			</div>
+			
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		
+		<div id ="about">
+		</div>
+		   
+	   <section class="row jumbotron" >
+	        <div class="col-md-12">
+				<h1 class="text-center">Presentation</h1>
+	       	</div>
+	       	<div class="col-md-12">
+	         	<p>
+	         		Werner Karl Heisenberg ( 5 December 1901 – 1 February 1976) was a German theoretical
+	         	 	physicist and one of the key pioneers of quantum mechanics. He published his work in 1925 in a breakthrough
+	         	  	paper. In the subsequent series of papers with Max Born and Pascual Jordan, during the same year, this matrix
+					formulation of quantum mechanics was substantially elaborated.
+	         	</p>
+	       	</div>
+	       	<div class="col-md-12">
+	          <h1 class="text-center">Nobel Prize</h1>
+	          	<p>
+	          	In 1927 he published his uncertainty principle, upon which he built his philosophy and for which he is best 
+	          	known. Heisenberg was awarded the Nobel Prize in Physics for 1932 "for the creation of quantum mechanics".
+	        	</p>
+	        </div>
+	   </section>
+		
+		<div id ="quotes">
+		</div>
+		
+	   	<section class="row jumbotron" >
+			<div class="col-md-12">
+				<h1 class="text-center">The famous quotes of Werner Heisenberg</h1>
+    		</div>
+    		<div class="col-md-4">
+	      		<p>
+	           		“There are things that are so serious that you can only joke about them.” 
+	           		<br />
+	           		<br />
+	           		“An expert is someone who knows some of the worst mistakes that can be made in his subject, and how to avoid them.” 
+	      		</p>
+    		</div>
+    		<div class="col-md-4">
+				<p>
+					“We have to remember that what we observe is not nature in itself but
+nature exposed to our method of questioning.” 
+					<br />
+					<br />
+					“My mind was formed by studying philosophy, Plato and that sort of thing.” 
+					<br />
+					<br />
+					“Only a few know, how much one must know to know how little one knows.”
+	         	</p>
+	       	</div>
+	       
+	        <div class="col-md-4">
+				<p>
+					“When I meet God, I am going to ask him two questions: Why relativity ? And why turbulence ? I really believe he will have an answer for the first.” 
+					<br />
+					<br />
+					“After the conversations about Indian philosophy, some of the ideas of Quantum Physics that had seemed so crazy suddenly made much more sense.”         
+	         	</p>
+	       </div>
+	       
+	   	</section>
+		
+		<div id ="add">
+		</div>
+		<section class="row jumbotron" >
+			<div class="col-md-12">
+				<h1 class="text-center">Wanna add something ? </h1>
+		    
+		    <div id = "main_content" class="main_content">
+		    
+		    <div class="launcher_menu">
+          	<ul>
+				<li value="Chat">
+					<i class="material-icons md-30 launch_icon">chat</i>
+					<div class="tool_container">
+				  		<div class="tool_line">
+				    		<span class="tool_title">ChatApp</span>
+				  		</div>
+					</div>
+	     		</li>
+	     	</ul>
+	     	</div>	
+	  		</div> 
+	  		</div>      
+		</section>
+			   
+		
+	<footer class="footer-basic-centered">
+		<p class="footer-company-motto">Timeline nobel prizes.</p>
+		<p class="footer-links">
+			<a href="../index.jsp">Home</a>
+		</p>
+		
+		<p class="footer-company-name">Colin Frapper &copy; 2017</p>
+
+   	</footer>
+		
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<!-- Javascript de Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="../Js/page.js" type="text/javascript"></script>
+	<script src="../Js/app.js" type="text/javascript"></script>
+	  
+	</body>
+
+</html>

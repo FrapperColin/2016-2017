@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_country"
+        android:title="@string/add_country"/>
+    <item
+        android:id="@+id/prefs"
+        android:title="@string/title_activity_preferences"/>
+    <item
+        android:id="@+id/menu"
+        android:title="@string/menu"/>
+</menu>

@@ -1,0 +1,52 @@
+Problem Access-Control-Allow-Origin :
+
+"Making HTTP requests in web page scripts once again raises concerns about security. The person who controls the script might not have the same interests as the
+person on whose computer it is running.
+It is possible for websites to protect themselves against such attacks, but that requires effort, and many websites fail to do it.
+For this reason, browsers protect us by disallowing scripts to make HTTP requests to other domains.
+This can be an annoying problem when building systems that want to access several domains for legitimate reasons.
+Fortunately, servers can include a header like this in their response to explicitly indicate to browsers that it is okay for the request
+to come from other domains:
+Access-Control-Allow-Origin: * "
+
+The problem is if the person who controls the script don't want to share the same data with the user who come on his website, so the browser disallowing script
+to make HTTP request to other domains, it's call CORS (Cross-Origin Resource Sharing), the problem is that a script from a domain A can only make XMLHttpRequests
+to domain A. There is multiple solutions to this problem : You can use your server as a proxy or implements Cross-Origin Resource Sharing header on the server to call -->
+(Access-Control-Allow-Origin: * ).
+
+
+
+WebStorage :
+
+Local Storage :
+When an application needs to remember something between sessions, you can't use variables because they are thrown away when the page is closed. So you can store
+string data in a way that survives page reloads by putting localStorage object. A value in localStorage sticks around until it is overwritten. Sites from different
+domains get different storage compartments. That means data stored in localStorage by a given website can, in principle, only be read (and overwritten) by scripts
+on that same site. There is also a limit on the size of the data.
+
+Session Storage :
+there is another object called sessionStorage, the difference between localStorage and sessionStorage is that the content of sessionStorage is forgotten at the end
+of each session, when the browser is closed.
+
+
+
+The localStorage and sessionStorage objects can be used to save information in a way that survives page reloads. The first saves the data forever
+(or until the user decides to clear it), and the second saves it until the browser is closed.
+
+
+IndexDB :
+
+IndexedDB is a way for you to persistently store data inside a user's browser.
+IndexedDB is a low-level API for client-side storage of significant amounts of structured data, including files/blobs. This API uses indexes to enable high
+performance searches of this data. While DOM Storage is useful for storing smaller amounts of data, it is less useful for storing larger amounts of structured data.
+IndexedDB provides a solution. This is the main landing page for MDN's IndexedDB coverage — here we provide links to the full API reference and usage guides,
+browser support details, and some explanation of key concepts.
+
+So the most difference between WebStorage and IndexedDB is the limit of the size of the data, the IndexedDB is mostly used to stock huge data while WebStorage(localStorage
+and sessionStorage) is useful for smaller data.
+
+
+
+
+
+

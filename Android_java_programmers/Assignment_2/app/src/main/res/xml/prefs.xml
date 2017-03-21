@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout="@style/AppTheme" >
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/colors"
+        android:entryValues="@array/colorValues"
+        android:key="@string/prefs_back_color_key"
+        android:summary="Choose your background color"
+        android:title="Background color" />
+    <ListPreference
+        android:defaultValue="16"
+        android:entries="@array/textSize"
+        android:entryValues="@array/textSizeValues"
+        android:key="@string/pres_text_size_key"
+        android:summary="Choose your text size"
+        android:title="Text size" />
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/textColor"
+        android:entryValues="@array/textColorValues"
+        android:key="@string/prefs_text_color_key"
+        android:summary="Choose your color for text"
+        android:title="Text color" />
+</PreferenceScreen>

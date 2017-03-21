@@ -1,0 +1,311 @@
+{
+    "Home_university": 
+    [
+    	{
+            "id" : "1",
+        	"name": "University of Nantes",
+        	"country" : "France",
+        	"place_offering" : "20",
+        	"name_coordinator" : "Victoire Morel",
+        	"email_coordinator" : "VictoireMorel@rhyta.com"
+    	},
+    	{
+            "id" : "2",
+        	"name": "Linnaeus University",
+        	"country" : "Sweden",
+        	"place_offering" : "15",
+        	"name_coordinator" : "PontusJansson",
+        	"email_coordinator" : "PontusJansson@jourrapide.com"	
+    	},
+        {
+            "id" : "3",
+            "name": "University of Berlin",
+            "country" : "Germany",
+            "place_offering" : "25",
+            "name_coordinator" : "Florian Duerr",
+            "email_coordinator" : "FlorianDuerr@armyspy.com"  
+        },
+        {
+            "id" : "4",
+            "name": "University of Barcelona ",
+            "country" : "Spain",
+            "place_offering" : "30",
+            "name_coordinator" : "Kalid Fajardo Juárez",
+            "email_coordinator" : "KalidFajardoJuarez@teleworm.us"  
+        }
+    ],
+    "Arrival_university" :
+    [
+    	{
+            "id" : "1",
+    		"name": "Linnaeus University",
+        	"country" : "Sweden",
+        	"place_offering" : "15",
+        	"name_coordinator" : "Pontus Jansson",
+        	"email_coordinator" : "PontusJansson@jourrapide.com"
+    	},
+    	{
+            "id" : "2",
+    		"name": "University of London",
+        	"country" : "England",
+        	"place_offering" : "20",
+        	"name_coordinator" : "Lilly Power",
+        	"email_coordinator" : "LillyPower@armyspy.com"
+    	},
+        {
+            "id" : "3",
+            "name": "University of Bordeaux",
+            "country" : "France",
+            "place_offering" : "5",
+            "name_coordinator" : "Margaux Racicot",
+            "email_coordinator" : "MargauxRacicot@jourrapide.com"
+        },
+        {
+            "id" : "4",
+            "name": "University of Dublin",
+            "country" : "Ireland",
+            "place_offering" : "20",
+            "name_coordinator" : "Aleah Boyle",
+            "email_coordinator" : "AleahBoyle@jourrapide.com"
+        }
+    ],
+    "Student": 
+    [
+        {
+            "id" : "1",
+            "name": "Colin",
+            "surname" : "Frapper",
+            "country": "France",
+            "email": "colin.frapper@hotmail.fr",
+            "id_home" : "1"
+
+        },
+        {
+            "id" : "2",
+            "name": "Thomas",
+            "surname" : "Martinsson",
+            "country": "Sweden",
+            "email": "ThomasMartinsson@rhyta.com",
+            "id_home" : "2"
+        },
+        {
+            "id" : "3",
+            "name": "Luca",
+            "surname" : "Jung",
+            "country": "Germany",
+            "email": "LucaJung@rhyta.com",
+            "id_home" : "3"
+        },
+        {
+            "id" : "4",
+            "name": "Paloma",
+            "surname" : "Mejía Alejandro",
+            "country": "Spain",
+            "email": "Paloma@rrerefe.com",
+            "id_home" : "4"
+        }
+    ],
+    "Home_course": 
+    [
+        {
+            "id": "2DV517",
+            "name" : "Base de donnée",
+            "credit": "7,5",
+            "id_univ" : "1"
+        },
+        {
+            "id": "2DV518",
+            "name" : "Introduction au technologie du web",
+            "credit": "7,5",
+            "id_univ" : "1"
+        },
+        {
+            "id": "2DV519",
+            "name" : "Statistics",
+            "credit": "7,5",
+            "id_univ" : "2"
+        },
+        {
+            "id": "2DV520",
+            "name" : "Economics of the Northen Coutnry",
+            "credit": "7,5",
+            "id_univ" : "2"
+        },
+        {
+            "id": "2DV521",
+            "name" : "Freudsche Psychologie",
+            "credit": "7,5",
+            "id_univ" : "3"
+        },
+        {
+            "id": "2DV522",
+            "name" : "instruktiv Psychologie",
+            "credit": "7,5",
+            "id_univ" : "3"
+        },
+        {
+            "id": "2DV523",
+            "name" : "Francia",
+            "credit": "7,5",
+            "id_univ" : "4"
+        },
+        {
+            "id": "2DV524",
+            "name" : "Inglés",
+            "credit": "7,5",
+            "id_univ" : "4"
+        }
+    ],
+    "Arrival_course": 
+    [
+        {
+            "id": "2DV525",
+            "name" : "Database theory",
+            "credit": "7,5",
+            "id_univ" : "1"
+        },
+        {
+            "id": "2DV526",
+            "name" : "Introduction to web programming",
+            "credit": "7,5",
+            "id_univ" : "1"
+        },
+        {
+            "id": "2DV527",
+            "name" : "Statistics",
+            "credit": "7,5",
+            "id_univ" : "2"
+        },
+        {
+            "id": "2DV528",
+            "name" : "Economics of Northen Country",
+            "credit": "7,5",
+            "id_univ" : "2"
+        },
+        {
+            "id": "2DV529",
+            "name" : "Psychologie freudienne",
+            "credit": "7,5",
+            "id_univ" : "3"
+        },
+        {
+            "id": "2DV530",
+            "name" : "Psychologie instructive",
+            "credit": "7,5",
+            "id_univ" : "3"
+        },
+        {
+            "id": "2DV531",
+            "name" : "French",
+            "credit": "7,5",
+            "id_univ" : "4"
+        },
+        {
+            "id": "2DV532",
+            "name" : "English",
+            "credit": "7,5",
+            "id_univ" : "4"
+        }
+    ],
+    "Learning_agreement": 
+    [
+        {
+            "id": "1",
+            "id_student": "1",
+            "id_home" : "1",
+            "id_arrival": "1",
+            "duration" : "12",
+            "stage" : "false",
+            "name_faculty" : "Faculty of technology"
+        },
+        {
+            "id": "2",
+            "id_student": "2",
+            "id_home" : "2",
+            "id_arrival": "2",
+            "duration" : "12",
+            "stage" : "true",
+            "name_faculty" : "Faculty of economics"
+        },
+        {
+            "id": "3",
+            "id_student": "3",
+            "id_home" : "3",
+            "id_arrival": "3",
+            "duration" : "6",
+            "stage" : "false",
+            "name_faculty" : "Faculty of psychology"
+        },
+        {
+            "id": "4",
+            "id_student": "4",
+            "id_home" : "4",
+            "id_arrival": "4",
+            "duration" : "24",
+            "stage" : "true",
+            "name_faculty" : "Faculty of language"
+        }
+    ],
+    "Have_contact": 
+    [
+        {
+            "id_home" : "1",
+            "id_arrival" : "1"
+        }, 
+        {
+            "id_home" : "2",
+            "id_arrival" : "2"
+        },
+        {
+            "id_home" : "3",
+            "id_arrival" : "3"
+        }, 
+        {
+            "id_home" : "4",
+            "id_arrival" : "4"
+        }
+    ],
+    "Correspond": 
+    [
+        {
+            "id_learning" : "1",
+            "id_home_course" : "2DV517",
+            "id_arrival_course" : "2DV525"
+        }, 
+        {
+            "id_learning" : "1",
+            "id_home_course" : "2DV518",
+            "id_arrival_course" : "2DV526"
+        },
+        {
+            "id_learning" : "2",
+            "id_home_course" : "2DV519",
+            "id_arrival_course" : "2DV527"
+        }, 
+        {
+            "id_learning" : "2",
+            "id_home_course" : "2DV520",
+            "id_arrival_course" : "2DV528"
+        },
+        {
+            "id_learning" : "3",
+            "id_home_course" : "2DV521",
+            "id_arrival_course" : "2DV529"
+        }, 
+        {
+            "id_learning" : "3",
+            "id_home_course" : "2DV522",
+            "id_arrival_course" : "2DV530"
+        },
+        {
+            "id_learning" : "4",
+            "id_home_course" : "2DV523",
+            "id_arrival_course" : "2DV531"
+        }, 
+        {
+            "id_learning" : "4",
+            "id_home_course" : "2DV524",
+            "id_arrival_course" : "2DV532"
+        }
+    ]
+}

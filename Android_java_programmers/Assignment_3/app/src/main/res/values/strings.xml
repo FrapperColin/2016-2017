@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Main -->
+    <string name="app_name">Assignment_3</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- Weather widget -->
+
+    <string name="title_weather">Weather</string>
+    <string name="sunny">Sunny</string>
+    <string name="temp">Temp: </string>
+    <string name="temperature"> Temperature : </string>
+    <string name="wind">Wind: </string>
+    <string name="rain">Rain: </string>
+    <string name="Internet">There is no internet</string>
+    <string name="city">City : </string>
+    <string name="btn_update">Update</string>
+    <string name="title_widget_configure">Widget_configure</string>
+
+    <!-- Incoming call -->
+    <string name="empty">There is no incoming calls </string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_send">Send Number!</string>
+    <string name="delete">Delete</string>
+    <string name="send_message">Send as message</string>
+    <string name="call">Call Number</string>
+    <string name="send_via">Send Number with :</string>
+    <string name="no_messaging_app">Nothing installed to send a message</string>
+
+
+    <!-- Map -->
+    <string name="title_city_map">City map</string>
+    <string name="title_road_map">Map</string>
+
+
+</resources>

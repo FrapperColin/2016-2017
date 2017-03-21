@@ -1,0 +1,22 @@
+/* TEAM */
+
+Name : FRAPPER Colin
+
+Location: Växjö, Sweden.
+
+
+/* SITE */
+
+About : Examination 3 - Introdution to web programming - Linnaeus University
+
+First start : 2016/10/05
+
+Last update:  2016/10/23
+
+Standards: HTML5, CSS3, Javascript.
+
+Realised on : Sublime Text, WebStorm, Google Chrome
+
+/* SOURCE */
+
+Site HTML : https://design.google.com/icons/
